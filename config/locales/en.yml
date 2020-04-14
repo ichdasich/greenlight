@@ -355,6 +355,8 @@ en:
       name_placeholder: Enter a room name...
       not_blank: Room name cannot be blank.
       title: Create New Room
+      recording: Record sessions
+      session_active: Active session
     delete_account:
       confirm: Are you sure you want to delete this account?
       delete: I'm sure, delete this account.
@@ -493,6 +495,7 @@ en:
     enter_the_access_code: Enter the room's access code
     invalid_provider: You have entered an invalid url. Please check the url and try again.
     invited: You have been invited to join
+    recording_present: The session is going to be recorded. This includes voice and video from your side.
     invite_participants: Invite Participants
     join: Join
     last_session: Last session on %{session}
