@@ -80,6 +80,10 @@ class Room < ApplicationRecord
     ActionCable.server.broadcast("#{uid}_waiting_channel", action: "started")
   end
 
+  def settings_hash
+    JSON.parse(room_settings)
+  end
+
   private
 
   # Generates a uid for the room and BigBlueButton.
