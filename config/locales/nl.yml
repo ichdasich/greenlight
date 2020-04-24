@@ -265,7 +265,7 @@ nl:
     version: "We hebben een nieuwe versie van Greenlight uitgebracht, maar uw database is niet compatibel."
   language_default: Standaard (browsertaal)
   ldap_error: Kan geen verbinding maken met de LDAP-server. Controleer uw LDAP-configuratie in het env-bestand en zorg ervoor dat uw server actief is.
-  login: Aanmelden
+  login: Inloggen
   login_title: Meld u aan bij uw account
   mailer:
     user:
