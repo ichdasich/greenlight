@@ -406,6 +406,7 @@ ru:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
+    saml: SAML
   recaptcha:
     errors:
       recaptcha_unreachable: "Упс, мы не смогли подтвердить ваш ответ reCAPTCHA. Пожалуйста попробуйте еще раз."

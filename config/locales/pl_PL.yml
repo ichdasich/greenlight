@@ -352,6 +352,7 @@ pl_PL:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
+    saml: SAML
   recaptcha:
     errors:
       recaptcha_unreachable: "Ups, nie udało się zweryfikować Twojej odpowiedzi reCAPTCHA. Proszę spróbuj ponownie."

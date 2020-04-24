@@ -352,6 +352,7 @@ sv_SE:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
+    saml: SAML
   recaptcha:
     errors:
       recaptcha_unreachable: "Oj, vi lyckades inte validera ditt reCAPTCHA-svar. Var god försök igen."

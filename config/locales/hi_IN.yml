@@ -352,6 +352,7 @@ hi_IN:
     office365:
     twitter: ट्विटर
     ldap:
+    saml: SAML
   recaptcha:
     errors:
       recaptcha_unreachable:

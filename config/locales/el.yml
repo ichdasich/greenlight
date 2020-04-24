@@ -352,6 +352,7 @@ el:
     office365:
     twitter:
     ldap:
+    saml: SAML
   recaptcha:
     errors:
       recaptcha_unreachable:
