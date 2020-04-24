@@ -165,7 +165,7 @@ en:
   bigbluebutton_exception: Oops, there was an error when starting the meeting!
   cancel: Cancel
   cookies:
-    cookie_info: Cookies help us deliver our services. By using our services, you agree to our use of cookies. You also agree to our <a href="../privacy.html">Privacy Policy</a>.
+    cookie_info: Cookies help us deliver our services. By using our services, you agree to our use of cookies. 
     cookie_button: I Agree
   copied: Copied
   copy: Copy
