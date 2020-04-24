@@ -136,7 +136,7 @@ es:
   bigbluebutton_exception: ¡Oh no! Ocurrió un error al iniciar la sesión.
   cancel: Cancelar
   cookies:
-    cookie_info: Las cookies nos ayudan a proveer nuestros servicios. Al utilizar nuestros servicios, usted acepta nuestro uso de las cookies. También acepta nuestra <a href="../privacy.html"> Política de privacidad </a>.
+    cookie_info: "Las cookies nos ayudan a proveer nuestros servicios. Al utilizar nuestros servicios, usted acepta nuestro uso de las cookies."
     cookie_button: Acepto
   copied: Copiada
   copy: Copiar

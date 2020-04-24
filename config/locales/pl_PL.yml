@@ -132,7 +132,7 @@ pl_PL:
   bigbluebutton_exception: "Ups, wystąpił błąd podczas rozpoczynania spotkania!"
   cancel: Anuluj
   cookies:
-    cookie_info: Ciasteczka pomagają nam dostarczyć nasze usługi. Korzystając z naszych usług, zgadzasz się na korzystanie z ciasteczek. Zgadzasz się również z naszą <a href="../privacy.html"> Polityką prywatności </a>.
+    cookie_info: "Ciasteczka pomagają nam dostarczyć nasze usługi. Korzystając z naszych usług, zgadzasz się na korzystanie z ciasteczek."
     cookie_button: Zgadzam się
   copied: Skopiowano
   copy: Kopiuj

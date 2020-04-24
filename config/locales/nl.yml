@@ -164,7 +164,7 @@ nl:
   bigbluebutton_exception: "Oeps, er is een fout opgetreden bij het starten van de vergadering!"
   cancel: Annuleren
   cookies:
-    cookie_info: Cookies helpen ons onze diensten te leveren. Door onze services te gebruiken, gaat u akkoord met ons gebruik van cookies. U gaat ook akkoord met ons <a href="../privacy.html"> privacybeleid </a>.
+    cookie_info: "Cookies helpen ons onze diensten te leveren. Door onze services te gebruiken, gaat u akkoord met ons gebruik van cookies."
     cookie_button: Daar ben ik het mee eens
   copied: Gekopieerd
   copy: Kopiëren

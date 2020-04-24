@@ -132,7 +132,7 @@ fr:
   bigbluebutton_exception: "Oups, une erreur s'est produite lors du démarrage de la réunion !"
   cancel: Annuler
   cookies:
-    cookie_info: Les cookies nous aident à fournir nos services. En utilisant nos services, vous acceptez notre utilisation des cookies. Vous acceptez également notre <a href="../privacy.html"> politique de confidentialité </a>.
+    cookie_info: "Les cookies nous aident à fournir nos services. En utilisant nos services, vous acceptez notre utilisation des cookies."
     cookie_button: Je suis d'accord
   copied: Copié
   copy: Copier

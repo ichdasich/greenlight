@@ -165,7 +165,7 @@ ja_JP:
   bigbluebutton_exception: 会議を開始するときにエラーが発生しました！
   cancel: キャンセル
   cookies:
-    cookie_info: Cookieはサービスを提供するのに役立ちます。 このサービスを使用することによりCookieの使用に同意したことになります。また、<a href="../privacy.html">プライバシーポリシー</a>にも同意するものとします。
+    cookie_info: Cookieはサービスを提供するのに役立ちます。 このサービスを使用することによりCookieの使用に同意したことになります。
     cookie_button: 同意する
   copied: コピーされた
   copy: コピー

@@ -165,7 +165,7 @@ lv:
   bigbluebutton_exception: "Hmm, mēģinot sākt sapulci, radās kļūda!"
   cancel: Atcelt
   cookies:
-    cookie_info: Sīkdatnes palīdz nodrošināt pakalpojumus. Izmantojot mūsu pakalpojumus, jūs piekrītat sīkdatņu izmantošanai. Jūs piekrītat arī mūsu <a href="../privacy.html"> konfidencialitātes politikai </a>.
+    cookie_info: "Sīkdatnes palīdz nodrošināt pakalpojumus. Izmantojot mūsu pakalpojumus, jūs piekrītat sīkdatņu izmantošanai."
     cookie_button: Piekrītu
   copied: Kopēts
   copy: Kopēt
