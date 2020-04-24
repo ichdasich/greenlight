@@ -136,11 +136,12 @@
 .customBtn-saml {
   @extend .customBtn;
   background: $button-color-blue;
+  background: #e67300;
 
   .customBtn-image {
     background: #e67300 image-url("saml-logo.png") no-repeat left top;
     background-size: 18px 18px;
-    padding:0px 0px 0px 0px;
+    padding:10px 10px 10px 10px;
   }
 }
 
