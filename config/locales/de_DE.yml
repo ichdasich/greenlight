@@ -229,7 +229,7 @@ de_DE:
     designs: Eigene Designs
     authentication: Nutzerauthentifizierung
   footer:
-    powered_by: "Bereitgestellt durch %{href}."
+    powered_by: "Betrieben mit durch %{href}."
   forgot_password:
     subtitle: Passwort vergessen
     email: E-Mail
