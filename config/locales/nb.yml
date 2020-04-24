@@ -357,7 +357,7 @@ nb:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
-    saml: SAML
+    saml: SURFconext
   recaptcha:
     errors:
       recaptcha_unreachable: "Huff, vi kunne ikke validere reCAPTCHA-svaret ditt. Vær så snill, prøv på nytt."

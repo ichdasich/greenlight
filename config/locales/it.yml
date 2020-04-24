@@ -352,7 +352,7 @@ it:
     office365:
     twitter: Twitter
     ldap:
-    saml: SAML
+    saml: SURFconext
   recaptcha:
     errors:
       recaptcha_unreachable: "Accidenti, la verifica reCAPTCHA è fallita. Riprova."

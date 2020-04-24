@@ -406,7 +406,7 @@ uk:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
-    saml: SAML
+    saml: SURFconext
   recaptcha:
     errors:
       recaptcha_unreachable: "Упс, ми не змогли підтвердити вашу відповідь reCAPTCHA. Будь ласка спробуйте ще раз."

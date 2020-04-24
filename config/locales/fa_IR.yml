@@ -406,7 +406,7 @@ fa_IR:
     office365: افیس 365
     twitter: توییتر
     ldap: LDAP
-    saml: SAML
+    saml: SURFconext
   recaptcha:
     errors:
       recaptcha_unreachable: اوپس، ما در دریافت پاسخ احراز هویت از reCAPTCHA به مشکل بر خوردیم. لطفا دوباره تلاش کنید.

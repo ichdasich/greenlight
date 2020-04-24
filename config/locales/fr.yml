@@ -352,7 +352,7 @@ fr:
     office365: 
     twitter: Twitter
     ldap:
-    saml: SAML
+    saml: SURFconext
   recaptcha:
     errors:
       recaptcha_unreachable:

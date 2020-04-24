@@ -406,7 +406,7 @@ tr_TR:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
-    saml: SAML
+    saml: SURFconext
   recaptcha:
     errors:
       recaptcha_unreachable: "Üzgünüz,  reCAPTCHA cevabınızı doğrulayamadık. Lütfen yeniden deneyiniz."
