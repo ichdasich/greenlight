@@ -132,7 +132,7 @@ sv_SE:
   bigbluebutton_exception: "Oj, det var ett fel när du startade mötet!"
   cancel: Avbryt
   cookies:
-    cookie_info: Kakor hjälper oss att leverera våra tjänster. Genom att använda våra tjänster godkänner du vår användning av kakor.
+    cookie_info: Kakor hjälper oss att leverera våra tjänster. Genom att använda våra tjänster godkänner du vår användning av kakor. Du godkänner också vår <a href="../privacy.html"> sekretesspolicy </a>.
     cookie_button: Jag godkänner
   copied: Kopierad
   copy: Kopiera

@@ -136,7 +136,7 @@ pt_BR:
   bigbluebutton_exception: "Oops, um erro ocorreu ao iniciar a sala."
   cancel: Cancelar
   cookies:
-    cookie_info: "Cookies nos ajudam a fornecer nossos serviços. Por utilizar nossos serviços, você aceita o nosso uso de cookies."
+    cookie_info: Cookies nos ajudam a fornecer nossos serviços. Por utilizar nossos serviços, você aceita o nosso uso de cookies. Você também concorda com nossa <a href="../privacy.html"> Política de Privacidade </a>.
     cookie_button: Eu concordo
   copied: Copiado
   copy: Copiar

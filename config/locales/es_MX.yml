@@ -165,7 +165,7 @@ es_MX:
   bigbluebutton_exception: Oh no! Ocurrió un error al iniciar la sesión.
   cancel: Cancelar
   cookies:
-    cookie_info: "Las cookies nos ayudan a proveer nuestros servicios. Al utilizar nuestros servicios, usted acepta nuestro uso de cookies."
+    cookie_info: Las cookies nos ayudan a proveer nuestros servicios. Al utilizar nuestros servicios, usted acepta nuestro uso de cookies. También acepta nuestra <a href="../privacy.html"> Política de privacidad </a>.
     cookie_button: Acepto
   copied: Copiada
   copy: Copiar

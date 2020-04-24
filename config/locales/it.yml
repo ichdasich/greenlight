@@ -132,7 +132,7 @@ it:
   bigbluebutton_exception: "Dannazione, c'è stato un errore nell'avvio del meeting!"
   cancel: Annulla
   cookies:
-    cookie_info: "I Cookies aiutano a fornire i servizi personalizzati. Usando i nostri servizi, accetti di usare i nostri Cookies."
+    cookie_info: I Cookies aiutano a fornire i servizi personalizzati. Usando i nostri servizi, accetti di usare i nostri Cookies. Accetti anche la nostra <a href="../privacy.html"> Informativa sulla privacy </a>.
     cookie_button: Accetto
   copied: Copiato
   copy: Copia

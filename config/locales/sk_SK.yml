@@ -136,7 +136,7 @@ sk_SK:
   bigbluebutton_exception: "Oops, pri štarte konferencie nastala chyba!"
   cancel: Zrušiť
   cookies:
-    cookie_info: Cookies nám pomáhajú poskytovať naše služby. Používaním našich služieb súhlasíte s ich použitím.
+    cookie_info: Cookies nám pomáhajú poskytovať naše služby. Používaním našich služieb súhlasíte s ich použitím. Du godkänner också vår <a href="../privacy.html"> sekretesspolicy </a>.
     cookie_button: Súhlasím
   copied: Skopírované
   copy: Kopírovať

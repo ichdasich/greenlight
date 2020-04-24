@@ -164,7 +164,7 @@ zh_CN:
   bigbluebutton_exception: 哎呀，启动会议出错！
   cancel: 取消
   cookies:
-    cookie_info: Cookies帮助我们提供服务。您同意我们使用cookies才能使用这些服务。
+    cookie_info: Cookies帮助我们提供服务。您同意我们使用cookies才能使用这些服务。您還同意我們的<a href="../privacy.html">隱私政策</a>。
     cookie_button: 我同意
   copied: Copied
   copy: 复制

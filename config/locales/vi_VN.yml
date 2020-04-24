@@ -132,7 +132,7 @@ vi_VN:
   bigbluebutton_exception: "Rất tiếc, đã xảy ra lỗi khi bắt đầu cuộc họp!"
   cancel: Hủy
   cookies:
-    cookie_info: "Cookies giúp chúng tôi cung cấp tốt trải nghiệm dịch vụ. Với việc sử dụng dịch vụ của chúng tôi, bạn đồng ý với việc chúng tôi sử dụng cookie."
+    cookie_info: Cookies giúp chúng tôi cung cấp tốt trải nghiệm dịch vụ. Với việc sử dụng dịch vụ của chúng tôi, bạn đồng ý với việc chúng tôi sử dụng cookie. Bn cũng đng ý vi <a href="../privacy.html"> Chính sách bo mt </a> ca chúng tôi.
     cookie_button: Tôi đồng ý
   copied: Đã sao chép
   copy: Sao chép

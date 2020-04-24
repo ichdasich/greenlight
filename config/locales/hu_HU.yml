@@ -164,7 +164,7 @@ hu_HU:
   bigbluebutton_exception: "Sajnáljuk, hiba történt a találkozó indításakor!"
   cancel: Mégsem
   cookies:
-    cookie_info: A szolgáltatását nyújtásában segítenek a sütijeink. A szolgáltatásaink használatával elfogadod a sütijeinket.
+    cookie_info: A szolgáltatását nyújtásában segítenek a sütijeink. A szolgáltatásaink használatával elfogadod a sütijeinket. Ön elfogadja a <a href="../privacy.html"> adatvédelmi irányelveinket </a>.
     cookie_button: Egyetértek
   copied: Másoltad
   copy: Másolás

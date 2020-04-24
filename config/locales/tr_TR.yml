@@ -164,7 +164,7 @@ tr_TR:
   bigbluebutton_exception: Hata! Toplantıya başlarken bir hata oluştu!
   cancel: İptal
   cookies:
-    cookie_info: Çerezler hizmetlerimizi sunmamıza yardım etmektedir. Hizmetleri kullanırken çerezlerin kullanılmasını kabul etmektesiniz.
+    cookie_info: Çerezler hizmetlerimizi sunmamıza yardım etmektedir. Hizmetleri kullanırken çerezlerin kullanılmasını kabul etmektesiniz. <a href="../privacy.html"> Gizlilik Politikamızı </a> da kabul edersiniz.
     cookie_button: Katılıyorum
   copied: Kopyalanan
   copy: Kopya

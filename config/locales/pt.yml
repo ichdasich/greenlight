@@ -132,7 +132,7 @@ pt:
   bigbluebutton_exception: "Oops, aconteceu um erro ao tentar começar a reunião."
   cancel: Cancelar
   cookies:
-    cookie_info: "Cookies ajudam a gente a entregar os nossos serviços. Ao usar nossos serviços, você aceita o nosso uso de cookies."
+    cookie_info: Cookies ajudam a gente a entregar os nossos serviços. Ao usar nossos serviços, você aceita o nosso uso de cookies. Você também concorda com nossa <a href="../privacy.html"> Política de Privacidade </a>.
     cookie_button: Eu concordo
   copied:
   copy: Copiar
