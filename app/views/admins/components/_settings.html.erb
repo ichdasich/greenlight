@@ -133,8 +133,11 @@
             <%= button_to admin_update_settings_path(setting: "Default Recording Visibility", value: "public"), class: "dropdown-item", "data-disable": "" do %>
               <%= t("recording.visibility.public") %>
             <% end %>
-            <%= button_to admin_update_settings_path(setting: "Default Recording Visibility", value: "private"), class: "dropdown-item", "data-disable": "" do %>
+            <%= button_to admin_update_settings_path(setting: "Default Recording Visibility", value: "unlisted"), class: "dropdown-item", "data-disable": "" do %>
               <%= t("recording.visibility.unlisted") %>
+            <% end %>
+            <%= button_to admin_update_settings_path(setting: "Default Recording Visibility", value: "private"), class: "dropdown-item", "data-disable": "" do %>
+              <%= t("recording.visibility.private") %>
             <% end %>
           </div>
         </div>
