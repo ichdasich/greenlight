@@ -30,6 +30,7 @@ class RecordingsController < ApplicationController
 
     res = update_recording(params[:record_id], meta)
 
+    logger.info "update server RB #{meta} , #{params}"
     # Redirects to the page that made the initial request
     redirect_back fallback_location: root_path if res[:updated]
   end
