@@ -98,7 +98,6 @@ module BbbServer
   # Update a recording from a room
   def update_recording(record_id, meta)
     meta[:recordID] = record_id
-    puts "Updating Metadata #{meta}"
     bbb_server.send_api_request("updateRecordings", meta)
   end
 
