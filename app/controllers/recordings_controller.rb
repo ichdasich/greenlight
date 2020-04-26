@@ -36,6 +36,7 @@ class RecordingsController < ApplicationController
       meta = {
         "meta_#{META_LISTED}" => "false",
       }
+    end
 
     res = update_recording(params[:record_id], meta)
 
