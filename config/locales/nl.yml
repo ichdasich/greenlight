@@ -222,11 +222,11 @@ nl:
       help: Neem contact op met uw systeembeheerder als u denkt dat dit een vergissing is.
   expired_reset_token: De link voor het opnieuw instellen van het wachtwoord is verlopen!
   features:
-    title: Kenmerken
-    rooms: Gepersonaliseerde kamers
+    title: Functies op dit exemplaar van BigBlueButton
+    rooms: Gepersonaliseerde digitale colleges
     recordings: Opnamebeheer
-    designs: Aangepaste ontwerpen
-    authentication: Gebruikersverificatie
+    designs: Gedeeld whiteboard
+    authentication: Authenticatie met SURFconnect
   footer:
     powered_by: "Mogelijk gemaakt door %{href}."
   forgot_password:
@@ -258,9 +258,9 @@ nl:
     search:
       start: Begin zoekopdracht
   landing:
-    about: "%{href} is een eenvoudige front-end voor uw BigBlueButton open-source webconferentieserver. U kunt uw eigen ruimtes maken om sessies te hosten of u kunt via een korte en handige link lid worden van anderen."
-    welcome: Welkom bij BigBlueButton.
-    video: Bekijk onze tutorial over het gebruik van Greenlight
+    about: We hebben dit exemplaar van BigBlueButton opgezet als een pilot voor docenten, medewerkers en studenten van de TU Delft en elders om te gebruiken voor online leren tijdens de sluiting van de universiteit vanwege maatregelen om de COVID-19 Pandemic in te perken. Voel je vrij om het te gebruiken!
+    welcome: Welkom bij bbb.surfcloud.nl
+    video: Bekijk deze tutorial voor meer informatie over het gebruik van BigBlueButton
     upgrade: Laat me zien hoe ik kan upgraden naar 2.0!
     version: "We hebben een nieuwe versie van Greenlight uitgebracht, maar uw database is niet compatibel."
   language_default: Standaard (browsertaal)

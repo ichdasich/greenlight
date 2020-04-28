@@ -224,11 +224,11 @@ en:
       help: If you believe this is a mistake, please contact your system administrator.
   expired_reset_token: Password reset link has expired!
   features:
-    title: Features
+    title: Features on this instance of BigBlueButton
     rooms: Personalized Rooms
     recordings: Recording Management
-    designs: Custom Designs
-    authentication: User Authentication
+    designs: Shared Whiteboard
+    authentication: Authentication with SURFconnect
   footer:
     powered_by: Powered by %{href}.
   forgot_password:
@@ -260,9 +260,9 @@ en:
     search:
       start: Start searching...
   landing:
-    about: "%{href} is a simple front-end for your BigBlueButton open-source web conferencing server. You can create your own rooms to host sessions, or join others using a short and convenient link."
-    welcome: Welcome to BigBlueButton.
-    video: Watch our tutorial on using Greenlight
+    about: "We have set up this instance of BigBlueButton as a pilot for faculty, staff and students at TU Delft and elsewhere to use for online learning during the closure of the university due to measures to contain the COVID-19 Pandemic. Feel free to use it!"
+    welcome: Welcome to bbb.surfcloud.nl
+    video: For more information on using BigBlueButton, watch this tutorial
     upgrade: Show me how to upgrade to 2.0!
     version: We've released a new version of Greenlight, but your database isn't compatible.
   language_default: Default (browser language)
