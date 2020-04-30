@@ -42,7 +42,7 @@
     <div class="dropdown">
       <% if recording[:metadata][:"gl-listed"] == "true" %>
         <button class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown"><i class="dropdown-icon fas fa-globe px-2"></i> <%= t("recording.visibility.public") %></button>
-      <% elsif ecording[:metadata][:"gl-listed"] == "unlisted" %>
+      <% elsif recording[:metadata][:"gl-listed"] == "unlisted" %>
         <button class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown"><i class="dropdown-icon fas fa-link px-2"></i> <%= t("recording.visibility.unlisted") %></button>
       <% else %>
         <button class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown"><i class="dropdown-icon fas fa-user-shield px-2"></i> <%= t("recording.visibility.private") %></button>
