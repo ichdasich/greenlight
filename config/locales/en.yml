@@ -224,7 +224,7 @@ en:
       help: If you believe this is a mistake, please contact your system administrator.
   expired_reset_token: Password reset link has expired!
   features:
-    title: Features on this instance of BigBlueButton
+    title: Features on this Instance of BigBlueButton
     rooms: Personalized Rooms
     recordings: Recording Management
     designs: Shared Whiteboard
