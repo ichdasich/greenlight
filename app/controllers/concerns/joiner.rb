@@ -92,6 +92,7 @@ module Joiner
       host: request.host,
       recording_default_visibility: @settings.get_value("Default Recording Visibility") == "public"
     }
+    logger.info "Room settings_hash #{@room.settings_hash}"
   end
 
   # Gets the room setting based on the option set in the room configuration
