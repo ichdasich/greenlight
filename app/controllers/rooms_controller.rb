@@ -50,7 +50,7 @@ class RoomsController < ApplicationController
     # Save the room and redirect if it fails
     return redirect_to current_user.main_room, flash: { alert: I18n.t("room.create_room_error") } unless @room.save
 
-    logger.info "Support: #{current_user.email} has created a new room #{@room.uid}."
+    logger.info "Support: #{current_user.email} has created a new room #{@room.uid} with #{room_params}."
 
     # Redirect to room is auto join was not turned on
     return redirect_to @room,
