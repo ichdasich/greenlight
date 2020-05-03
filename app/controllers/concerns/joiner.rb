@@ -115,7 +115,7 @@ module Joiner
     when "optional"
       if name == "recording"
         logger.info "Getting room settings for recording setting: #{name}"
-        if @room_settings[name] || ! @room_settings[name]
+        if @room_settings[name].nil?
           logger.info "Value found; returning set room setting #{@room_settings[name]}"
           @room_settings[name]
         else
