@@ -113,13 +113,11 @@ module Joiner
     when "enabled"
       true
     when "optional"
+      # custom handler to default to record=true for pre-existing rooms
       if name == "recording"
-        logger.info "Getting room settings for recording setting: #{name}"
         if @room_settings[name].nil?
-          logger.info "No value found; returning default true"
           true
         else
-          logger.info "Value found; returning set room setting #{@room_settings[name]}"
           @room_settings[name]
         end
       else
