@@ -169,7 +169,7 @@ describe RoomsController, type: :controller do
       room_params = { name: name, "mute_on_join": "1",
         "require_moderator_approval": "1", "anyone_can_start": "1", "all_join_moderator": "1" }
       json_room_settings = "{\"muteOnStart\":true,\"requireModeratorApproval\":true," \
-        "\"anyoneCanStart\":true,\"joinModerator\":true}"
+        "\"anyoneCanStart\":true,\"joinModerator\":true,\"recording\":false}"
 
       post :create, params: { room: room_params }
 
@@ -186,12 +186,12 @@ describe RoomsController, type: :controller do
       @owner.main_room.update_attribute(:room_settings, { "muteOnStart": true, "requireModeratorApproval": true,
       "anyoneCanStart": true, "joinModerator": true }.to_json)
 
-      json_room_settings = "{\"muteOnStart\":true,\"requireModeratorApproval\":true," \
+      json_room_settings = "{\"running\":false,\"muteOnStart\":true,\"requireModeratorApproval\":true," \
         "\"anyoneCanStart\":true,\"joinModerator\":true}"
 
       get :room_settings, params: { room_uid: @owner.main_room }, format: :json
 
-      expect(JSON.parse(response.body)).to eql(json_room_settings)
+      expect(JSON.parse(response.body).to_json).to eql(json_room_settings)
     end
 
     it "should redirect to root if not logged in" do
@@ -262,6 +262,7 @@ describe RoomsController, type: :controller do
 
     it "should join the room if the room has the anyone_can_start setting" do
       allow_any_instance_of(BigBlueButton::BigBlueButtonApi).to receive(:is_meeting_running?).and_return(false)
+      allow_any_instance_of(Setting).to receive(:get_value).and_return("optional")
 
       room = Room.new(name: "test")
       room.room_settings = "{\"muteOnStart\":false,\"joinViaHtml5\":false,\"anyoneCanStart\":true}"
@@ -274,7 +275,38 @@ describe RoomsController, type: :controller do
       expect(response).to redirect_to(join_path(room, @user.name, { user_is_moderator: false }, @user.uid))
     end
 
-    it "should join the room as moderator if room has the all_join_moderator setting" do
+    it "doesn't join the room if the room has the anyone_can_start setting but config is disabled" do
+      allow_any_instance_of(BigBlueButton::BigBlueButtonApi).to receive(:is_meeting_running?).and_return(false)
+      allow_any_instance_of(Setting).to receive(:get_value).and_return("disabled")
+
+      room = Room.new(name: "test")
+      room.room_settings = "{\"muteOnStart\":false,\"joinViaHtml5\":false,\"anyoneCanStart\":true}"
+      room.owner = @owner
+      room.save
+
+      @request.session[:user_id] = @user.id
+      post :join, params: { room_uid: room, join_name: @user.name }
+
+      expect(response).to render_template(:wait)
+    end
+
+    it "joins the room if the room doesn't have the anyone_can_start setting but config is set to enabled" do
+      allow_any_instance_of(BigBlueButton::BigBlueButtonApi).to receive(:is_meeting_running?).and_return(false)
+      allow_any_instance_of(Setting).to receive(:get_value).and_return("enabled")
+
+      room = Room.new(name: "test")
+      room.room_settings = "{\"anyoneCanStart\":false}"
+      room.owner = @owner
+      room.save
+
+      @request.session[:user_id] = @user.id
+      post :join, params: { room_uid: room, join_name: @user.name }
+
+      expect(response).to redirect_to(join_path(room, @user.name, { user_is_moderator: true }, @user.uid))
+    end
+
+    it "joins the room as moderator if room has the all_join_moderator setting" do
+      allow_any_instance_of(Setting).to receive(:get_value).and_return("optional")
       allow_any_instance_of(BigBlueButton::BigBlueButtonApi).to receive(:is_meeting_running?).and_return(true)
 
       room = Room.new(name: "test")
@@ -286,6 +318,36 @@ describe RoomsController, type: :controller do
       post :join, params: { room_uid: room, join_name: @user.name }
 
       expect(response).to redirect_to(join_path(room, @user.name, { user_is_moderator: true }, @user.uid))
+    end
+
+    it "joins the room as moderator if room doesn't have all_join_moderator but config is set to enabled" do
+      allow_any_instance_of(Setting).to receive(:get_value).and_return("enabled")
+      allow_any_instance_of(BigBlueButton::BigBlueButtonApi).to receive(:is_meeting_running?).and_return(true)
+
+      room = Room.new(name: "test")
+      room.room_settings = "{ }"
+      room.owner = @owner
+      room.save
+
+      @request.session[:user_id] = @user.id
+      post :join, params: { room_uid: room, join_name: @user.name }
+
+      expect(response).to redirect_to(join_path(room, @user.name, { user_is_moderator: true }, @user.uid))
+    end
+
+    it "doesn't join the room as moderator if room has the all_join_moderator setting but config is set to disabled" do
+      allow_any_instance_of(Setting).to receive(:get_value).and_return("disabled")
+      allow_any_instance_of(BigBlueButton::BigBlueButtonApi).to receive(:is_meeting_running?).and_return(true)
+
+      room = Room.new(name: "test")
+      room.room_settings = "{\"joinModerator\":true}"
+      room.owner = @owner
+      room.save
+
+      @request.session[:user_id] = @user.id
+      post :join, params: { room_uid: room, join_name: @user.name }
+
+      expect(response).to redirect_to(join_path(room, @user.name, { user_is_moderator: false }, @user.uid))
     end
 
     it "should render wait if the correct access code is supplied" do
@@ -507,7 +569,7 @@ describe RoomsController, type: :controller do
 
       room_params = { "mute_on_join": "1", "name": @secondary_room.name }
       formatted_room_params = "{\"muteOnStart\":true,\"requireModeratorApproval\":false," \
-        "\"anyoneCanStart\":false,\"joinModerator\":false}" # JSON string format
+        "\"anyoneCanStart\":false,\"joinModerator\":false,\"recording\":false}" # JSON string format
 
       expect { post :update_settings, params: { room_uid: @secondary_room.uid, room: room_params } }
         .to change { @secondary_room.reload.room_settings }
@@ -530,7 +592,7 @@ describe RoomsController, type: :controller do
 
       room_params = { "mute_on_join": "1", "name": @secondary_room.name }
       formatted_room_params = "{\"muteOnStart\":true,\"requireModeratorApproval\":false," \
-        "\"anyoneCanStart\":false,\"joinModerator\":false}" # JSON string format
+        "\"anyoneCanStart\":false,\"joinModerator\":false,\"recording\":false}" # JSON string format
 
       expect { post :update_settings, params: { room_uid: @secondary_room.uid, room: room_params } }
         .to change { @secondary_room.reload.room_settings }
