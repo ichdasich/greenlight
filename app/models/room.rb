@@ -81,12 +81,7 @@ class Room < ApplicationRecord
   end
 
   def settings_hash
-    tmp_settings_hash = JSON.parse(room_settings)
-    if ! tmp_settings_hash.key?("recording")
-      logger.info("No recording entry found. Defaulting to true.")
-      #tmp_settings_hash["recording"] = true
-    end
-    tmp_settings_hash
+    JSON.parse(room_settings)
   end
 
   private

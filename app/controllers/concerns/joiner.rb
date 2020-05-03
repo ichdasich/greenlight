@@ -84,10 +84,15 @@ module Joiner
   # Default, unconfigured meeting options.
   def default_meeting_options
     invite_msg = I18n.t("invite_message")
+    if @room.settings_hash.key?("recording")
+      record_setting = @room.settings_hash["recording"]
+    else
+      record_setting = true
+    end
     {
       user_is_moderator: false,
       meeting_logout_url: request.base_url + logout_room_path(@room),
-      #meeting_recorded: @room.settings_hash["recording"],
+      meeting_recorded: record_setting
       meeting_recorded: true,
       moderator_message: "#{invite_msg}\n\n#{request.base_url + room_path(@room)}",
       host: request.host,
