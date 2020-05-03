@@ -113,7 +113,18 @@ module Joiner
     when "enabled"
       true
     when "optional"
-      @room_settings[name]
+      if name == "recording"
+        logger.info "Getting room settings for recording setting"
+        if @room_settings[name] == "true" || @room_settings[name] == "false"
+          logger.info "Value found; returning set room setting"
+          @room_settings[name]
+        else
+          logger.info "No value found; returning default true"
+          "true"
+        end
+      else
+        @room_settings[name]
+      end
     when "disabled"
       false
     end
