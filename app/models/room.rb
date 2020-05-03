@@ -85,6 +85,8 @@ class Room < ApplicationRecord
     if ! tmp_settings_hash.key?("recording")
       logger.info("No recording entry found. Defaulting to true.")
       tmp_settings_hash[:recording] = true
+      tmp_settings_hash[:recordings] = true
+      tmp_settings_hash[:record] = true
     end
     tmp_settings_hash
   end
