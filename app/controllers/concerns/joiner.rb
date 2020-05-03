@@ -92,7 +92,7 @@ module Joiner
     {
       user_is_moderator: false,
       meeting_logout_url: request.base_url + logout_room_path(@room),
-      meeting_recorded: record_setting
+      meeting_recorded: record_setting,
 #      meeting_recorded: true,
       moderator_message: "#{invite_msg}\n\n#{request.base_url + room_path(@room)}",
       host: request.host,
