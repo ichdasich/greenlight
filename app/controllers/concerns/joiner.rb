@@ -112,11 +112,10 @@ module Joiner
     case @settings.get_value(config)
     when "enabled"
       true
-    when "optional"
+    when "optional", name != "recording"
       if name == "recording"
         logger.info "Getting room settings for recording setting: #{@room_settings[name]}"
-        #if @room_settings[name] == "true" || @room_settings[name] == "false"
-        if @room_settings[name]
+        if @room_settings[name] === "true" || @room_settings[name] === "false"
           logger.info "Value found; returning set room setting"
           @room_settings[name]
         else
