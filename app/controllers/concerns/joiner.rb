@@ -108,7 +108,7 @@ module Joiner
     when "recording"
      "Room Configuration Recording"
     end
-
+    logger.info "Getting room settings for #{@room_settings[name]}"
     case @settings.get_value(config)
     when "enabled"
       true
