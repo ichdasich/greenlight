@@ -294,7 +294,8 @@ class RoomsController < ApplicationController
 
   def room_params
     params.require(:room).permit(:name, :auto_join, :mute_on_join, :access_code,
-      :require_moderator_approval, :anyone_can_start, :all_join_moderator)
+      :require_moderator_approval, :anyone_can_start, :all_join_moderator,
+      :recording)
   end
 
   # Find the room from the uid.
