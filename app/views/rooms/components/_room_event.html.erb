@@ -29,7 +29,7 @@
                 <span class="custom-switch-indicator cursor-pointer"></span>
               </label>
               <%= label :accepted_terms, t("terms.accept", href: link_to(t("terms.title"), terms_path, target: "_blank", class: "ml-1 text-blue")).html_safe, class: "ml-1" %>
-              <div class="invalid-feedback d-block"><%= @user.errors.full_messages_for(:accepted_terms).first %></div>
+              <div class="invalid-feedback d-block"><%= "Feedback" %></div>
             </div>
 
 
