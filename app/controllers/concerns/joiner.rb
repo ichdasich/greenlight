@@ -87,7 +87,7 @@ module Joiner
     if @room.settings_hash.key?("recording")
       record_setting = @room.settings_hash["recording"]
     else
-      record_setting = true
+      record_setting = false
     end
     {
       user_is_moderator: false,
@@ -122,7 +122,7 @@ module Joiner
       # custom handler to default to record=true for pre-existing rooms
       if name == "recording"
         if @room_settings[name].nil?
-          true
+          false
         else
           @room_settings[name]
         end
