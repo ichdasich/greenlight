@@ -567,9 +567,9 @@ describe RoomsController, type: :controller do
     it "properly updates room settings through the room settings modal and redirects to current page" do
       @request.session[:user_id] = @user.id
 
-      room_params = { "mute_on_join": "1", "name": @secondary_room.name }
+      room_params = { "mute_on_join": "1", "name": @secondary_room.name, "recording": "1" }
       formatted_room_params = "{\"muteOnStart\":true,\"requireModeratorApproval\":false," \
-        "\"anyoneCanStart\":false,\"joinModerator\":false,\"recording\":false}" # JSON string format
+        "\"anyoneCanStart\":false,\"joinModerator\":false,\"recording\":true}" # JSON string format
 
       expect { post :update_settings, params: { room_uid: @secondary_room.uid, room: room_params } }
         .to change { @secondary_room.reload.room_settings }

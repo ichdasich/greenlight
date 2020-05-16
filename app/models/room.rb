@@ -84,6 +84,10 @@ class Room < ApplicationRecord
     JSON.parse(room_settings)
   end
 
+  def recording?
+    settings_hash["recording"]
+  end
+
   private
 
   # Generates a uid for the room and BigBlueButton.

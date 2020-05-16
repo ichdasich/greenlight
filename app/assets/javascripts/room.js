@@ -53,6 +53,9 @@ $(document).on('turbolinks:load', function(){
     $("#create-room-block").click(function(){
       showCreateRoom(this)
     })
+    $("#consent-button").click(function() {
+        consentRecording();
+    })
   }
 
     // Autofocus on the Room Name label when creating a room only
@@ -277,4 +280,10 @@ function removeSharedUser(target) {
     parentLI.removeChild(target)
     parentLI.classList.add("remove-shared")
   }
+}
+
+function consentRecording() {
+    $("#consent-content").show();
+    $("#consent-form").hide();
+
 }
