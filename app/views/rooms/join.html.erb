@@ -53,7 +53,7 @@
       <h4 class="text-left text-danger"><%= I18n.t("room.recording_present", pp_link: "/b/terms").html_safe%></h4>
       <div class="form-inline">
         <label class="custom-switch">
-          <%= f.check_box :accepted_terms, required:true, class: "custom-switch-input form-control", oninvalid:"this.setCustomValidity('"+I18n.t("terms.accept_recording")+"')" %>
+          <%= f.check_box :accepted_terms, required:true, class: "custom-switch-input form-control", oninvalid:"this.setCustomValidity('"+I18n.t("terms.error_recording")+"')" %>
           <span class="custom-switch-indicator cursor-pointer"></span>
         </label>
         <%= f.label :accepted_terms, I18n.t("terms.accept_recording").html_safe %>

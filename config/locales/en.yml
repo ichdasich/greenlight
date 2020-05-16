@@ -569,6 +569,7 @@ en:
   terms:
     accept: I accept the %{href}
     accept_recording: I accept the <a href="/b/terms">&nbsp;<u>Privacy Policy</u>&nbsp;</a> and consent to the recording of this session.
+    error_recording: Please accept our privacy policy and consent to the session you are about to join being recorded.
     accept_existing: I accept the Privacy Policy
     title: Privacy Policy
   test_install: >
