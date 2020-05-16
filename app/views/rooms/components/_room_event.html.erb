@@ -24,7 +24,7 @@
 
               <div class="form-inline">
                 <label class="custom-switch">
-                  <input name="user[accepted_terms]" type="hidden" value="0"><input class="custom-switch-input form-control " placeholder="Password Confirmation" type="checkbox" value="1" name="user[accepted_terms]" id="user_accepted_terms">
+                  <input name="user[accepted_terms]" type="hidden" value="0"><input class="custom-switch-input form-control " placeholder="Password Confirmation" type="checkbox" value="1" name="user[accepted_terms]" id="user_accepted_terms" onchange="document.getElementById('buttonJoinConf').disabled = !this.checked;" >
                   <span class="custom-switch-indicator cursor-pointer"></span>
                 </label>
                 <label class="ml-1" for="user_accepted_terms">I accept the <a target="_blank" class="ml-1 text-blue" href="/b/terms">Privacy Policy</a></label>
