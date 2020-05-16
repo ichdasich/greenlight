@@ -20,34 +20,6 @@
         <h4 class="text-left"><%= t("room.invited") %></h4>
         <%- if  @room.recording? %>
           <h4 class="text-left text-danger"><%= I18n.t("room.recording_present", pp_link: "/b/terms").html_safe%></h4>
-          <% if Rails.configuration.terms %>
-
-              <div class="form-inline">
-                <label class="custom-switch">
-                  <input name="user[accepted_terms]" type="hidden" value="0"><input class="custom-switch-input form-control " placeholder="Password Confirmation" type="checkbox" value="1" name="user[accepted_terms]" id="user_accepted_terms" onchange="document.getElementById('buttonJoinConf').disabled = !this.checked;" >
-                  <span class="custom-switch-indicator cursor-pointer"></span>
-                </label>
-                <label class="ml-1" for="user_accepted_terms">I accept the <a target="_blank" class="ml-1 text-blue" href="/b/terms">Privacy Policy</a></label>
-                <div class="invalid-feedback d-block"></div>
-              </div>
-
-
-
-            <div class="form-inline">
-              <label class="custom-switch">
-                <%= check_box :accepted_terms, class: "custom-switch-input form-control", placeholder: t("signup.password_confirm") %>
-                <span class="custom-switch-indicator cursor-pointer"></span>
-              </label>
-              <%= label :accepted_terms, t("terms.accept", href: link_to(t("terms.title"), terms_path, target: "_blank", class: "ml-1 text-blue")).html_safe, class: "ml-1" %>
-              <div class="invalid-feedback d-block"><%= "Feedback" %></div>
-            </div>
-
-
-
-            <div class="btn-list text-right pt-8">
-              <%= button_to t("terms.accept_existing"), terms_path, params: { accept: true }, class: "btn btn-primary btn-space", "data-disable": "" %>
-            </div>
-          <% end %>
         <% end %>
         <h1 class="display-3 text-left mb-3 font-weight-400"><%= @room.name %></h1>
         <hr class="mt-2 float-left w-25">
