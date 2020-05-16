@@ -395,6 +395,8 @@ en:
       require_approval: Require moderator approval before joining
       start: Allow any user to start this meeting
       footer_text: Adjustment to your room can be done at anytime.
+      recording: Record sessions
+      session_active: Active session
     rename_room:
       name_placeholder: Enter a new room name...
     share_access:
@@ -535,6 +537,7 @@ en:
     wait:
       message: The meeting hasn't started yet.
       auto: You will automatically join when the meeting starts.
+    recording_consent: Consent to recording
   settings:
     account:
       fullname: Full name
