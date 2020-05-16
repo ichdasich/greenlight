@@ -568,7 +568,7 @@ en:
     with: Sign up with %{provider}
   terms:
     accept: I accept the %{href}
-    accept_recording: I accept the <a href="%{href}"><u>Privacy Policy</u></a> and consent to the recording of this session.
+    accept_recording: I accept the <a href="%{pp_link}"><u>Privacy Policy</u></a> and consent to the recording of this session.
     accept_existing: I accept the Privacy Policy
     title: Privacy Policy
   test_install: >
