@@ -20,9 +20,6 @@
         <h4 class="text-left"><%= t("room.invited") %></h4>
         <h1 class="display-3 text-left mb-3 font-weight-400"><%= @room.name %></h1>
         <hr class="mt-2 float-left w-25">
-        <%- if  @room.recording? %>
-          <h4 class="text-left text-danger"><%= I18n.t("room.recording_present", pp_link: "/b/terms").html_safe%></h4>
-        <% end %>
       </div>
     </div>
 
