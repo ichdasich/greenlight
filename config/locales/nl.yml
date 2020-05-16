@@ -557,7 +557,7 @@ nl:
     with: "Meld u aan bij %{provider}"
   terms:
     accept: "Ik accepteer de %{href}"
-    accept_recording: Ik accepteer de <a href="%{pp_link}"><u>algemene voorwaarden</u></a> en stem in met de opname
+    accept_recording: Ik accepteer de <a href="/b/terms"><u>algemene voorwaarden</u></a> en stem in met de opname
     accept_existing: Ik accepteer de algemene voorwaarden
     title: Voorwaarden
   test_install: >-
