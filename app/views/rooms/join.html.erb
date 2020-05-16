@@ -62,7 +62,7 @@
       <% else %>
 
         <span class="input-group-append">
-          <button name="buttonJoinConf" type="submit" class="btn btn-primary btn-sm px-7 form-control join-form" disabled>
+          <button name="buttonJoinConf" type="submit" class="btn btn-primary btn-sm px-7 form-control join-form">
             <%= (!@room_running && @anyone_can_start) ? t("room.start") : t("room.join") %>
           </button>
         </span>
