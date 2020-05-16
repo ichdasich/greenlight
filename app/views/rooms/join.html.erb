@@ -43,7 +43,7 @@
             readonly: !current_user.nil?, 
             autofocus: true
             %>
-      <%- if  @room.recording? %>
+      <%- if  @room.recording? && false%>
         <span class="input-group-append">
           <button name="buttonJoinConf" type="submit" class="btn btn-primary btn-sm px-7 form-control join-form" disabled>
             <%= (!@room_running && @anyone_can_start) ? t("room.start") : t("room.join") %>
@@ -58,6 +58,22 @@
         </label>
         <label class="ml-1" for="user_accepted_terms">I accept the <a target="_blank" class="ml-1 text-blue" href="/b/terms">Privacy Policy</a></label>
         <div class="invalid-feedback d-block"></div>
+      </div>
+      <% elsif @room.recording? %>
+        <span class="input-group-append">
+          <button name="buttonJoinConf" type="submit" class="btn btn-primary btn-sm px-7 form-control join-form" disabled>
+            <%= (!@room_running && @anyone_can_start) ? t("room.start") : t("room.join") %>
+          </button>
+        </span>
+      </div>
+      <h4 class="text-left text-danger"><%= I18n.t("room.recording_present", pp_link: "/b/terms").html_safe%></h4>
+      <div class="form-inline">
+        <label class="custom-switch">
+          <%= f.check_box :accepted_terms, class: "custom-switch-input form-control #{form_is_invalid?(@user, :accepted_terms)}", placeholder: t("signup.password_confirm") %>
+          <span class="custom-switch-indicator cursor-pointer"></span>
+        </label>
+        <%= f.label :accepted_terms, t("terms.accept", href: link_to(t("terms.title"), terms_path, target: "_blank", class: "ml-1 text-blue")).html_safe, class: "ml-1" %>
+        <div class="invalid-feedback d-block"><%= @user.errors.full_messages_for(:accepted_terms).first %></div>
       </div>
       <% else %>
 
