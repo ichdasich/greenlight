@@ -25,7 +25,7 @@
 
             <div class="form-inline">
               <label class="custom-switch">
-                <%= check_box :accepted_terms, class: "custom-switch-input form-control #{form_is_invalid?(@user, :accepted_terms)}", placeholder: t("signup.password_confirm") %>
+                <%= check_box :accepted_terms, class: "custom-switch-input form-control", placeholder: t("signup.password_confirm") %>
                 <span class="custom-switch-indicator cursor-pointer"></span>
               </label>
               <%= label :accepted_terms, t("terms.accept", href: link_to(t("terms.title"), terms_path, target: "_blank", class: "ml-1 text-blue")).html_safe, class: "ml-1" %>
