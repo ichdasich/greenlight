@@ -20,11 +20,12 @@
         <h4 class="text-left"><%= t("room.invited") %></h4>
         <%- if  @room.recording? %>
           <h4 class="text-left text-danger"><%= I18n.t("room.recording_present", pp_link: "/b/terms").html_safe%></h4>
-            <% if Rails.configuration.terms %>
-              <div class="btn-list text-right pt-8">
-                <%= button_to t("terms.accept_existing"), terms_path, params: { accept: true }, class: "btn btn-primary btn-space", "data-disable": "" %>
-              </div>
-            <% end %>
+          <% if Rails.configuration.terms %>
+            <div class="btn-list text-right pt-8">
+              <%= button_to t("terms.accept_existing"), terms_path, params: { accept: true }, class: "btn btn-primary btn-space", "data-disable": "" %>
+            </div>
+          <% end %>
+        <% end %>
         <h1 class="display-3 text-left mb-3 font-weight-400"><%= @room.name %></h1>
         <hr class="mt-2 float-left w-25">
       </div>
