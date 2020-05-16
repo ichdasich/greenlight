@@ -56,7 +56,7 @@
           <%= f.check_box :accepted_terms, required:true, class: "custom-switch-input form-control is-invalid", placeholder: t("signup.password_confirm" %>
           <span class="custom-switch-indicator cursor-pointer"></span>
         </label>
-        <%= f.label :accepted_terms, t("terms.accept", href: link_to(t("terms.title"), terms_path, target: "_blank", class: "ml-1 text-blue")).html_safe, class: "ml-1" %>
+        <%= f.label :accepted_terms, t("terms.accept_recording", href: link_to(t("terms.title"), terms_path, target: "_blank", class: "ml-1 text-blue")).html_safe, class: "ml-1" %>
       </div>
       <% else %>
 
