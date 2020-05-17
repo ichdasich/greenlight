@@ -45,9 +45,9 @@ en:
         invalid: Invalid URL
       legal:
         change: Change URL
-        info: Change the Legal Link that appears in the bottom of the page
-        placeholder: Legal URL...
-        title: Legal
+        info: Change the Imprint Link that appears in the bottom of the page
+        placeholder: Imprint URL...
+        title: Imprint
         invalid: Invalid URL
       privpolicy:
         change: Change URL
