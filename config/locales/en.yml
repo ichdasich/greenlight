@@ -263,9 +263,9 @@ en:
     designs: Shared Whiteboard
     authentication: Authentication with SURFconnect
   footer:
-    legal: Legal
+    legal: Imprint
     privpolicy: Privacy Policy
-    powered_by: Powered by %{href}.
+    powered_by: Powered by %{href}
   forgot_password:
     subtitle: Forgot Password
     email: Email
