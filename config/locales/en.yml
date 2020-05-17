@@ -519,7 +519,7 @@ en:
     enter_the_access_code: Enter the room's access code
     invalid_provider: You have entered an invalid url. Please check the url and try again.
     invited: You have been invited to join
-    recording_present: The session you are about to join is going to be recorded. This includes all voice, video, whiteboard, and chat contributions you make during the session. Please indicate below whether you consent to this. Please refer to our <a href="%{pp_link}"><u>Privacy Policy</u></a> for further information!
+    recording_present: The session you are about to join is going to be recorded. This includes all voice, video, whiteboard, and chat contributions you make during the session. The recording may be made public or shared with third parties after the session. Please indicate below whether you consent to this. Please refer to our <a href="%{pp_link}"><u>Privacy Policy</u></a> for further information!
     invite_participants: Invite Participants
     join: Join
     last_session: Last session on %{session}

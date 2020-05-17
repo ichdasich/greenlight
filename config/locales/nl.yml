@@ -492,6 +492,7 @@ nl:
       fail: "Kan kamer niet verwijderen (%{error})"
     enter_the_access_code: Voer de toegangscode van de kamer in
     invalid_provider: U heeft een ongeldige URL ingevoerd. Controleer de URL en probeer het opnieuw.
+    recording_present: De sessie waaraan u wilt deelnemen, wordt opgenomen. Dit omvat alle spraak-, video-, whiteboard- en chatbijdragen die u tijdens de sessie levert. De opname kan na de sessie openbaar worden gemaakt of worden gedeeld met derden. Geef hieronder aan of u hiermee instemt. Raadpleeg ons <a href="%{pp_link}"> <u> Privacybeleid </u> </a> voor meer informatie!
     invited: Je bent uitgenodigd om lid te worden
     invite_participants: Deelnemers uitnodigen
     join: Toetreden
