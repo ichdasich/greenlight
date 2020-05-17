@@ -164,6 +164,9 @@ function showCreateRoom(target) {
     $(this).attr('style',"display:none !important")
     if($(this).children().length > 0) { $(this).children().attr('style',"display:none !important") }
   })
+
+  runningSessionWarningVisibilty(false)
+
 }
 
 function showUpdateRoom(target) {
@@ -196,6 +199,9 @@ function showUpdateRoom(target) {
     $("#create-room-access-code").text(getLocalizedString("modal.create_room.access_code_placeholder"))
     $("#room_access_code").val(null)
   }
+
+  runningSessionWarningVisibilty(false)
+
 }
 
 function showDeleteRoom(target) {
@@ -213,13 +219,8 @@ function updateCurrentSettings(settings_path){
     $("#room_all_join_moderator").prop("checked", $("#room_all_join_moderator").data("default") || settings.joinModerator)
     $("#room_recording").prop("checked", $("#room_recording").data("default") || settings.recording)
 
-    if(settings.running) {
-        $(".running-only").show()
-        $(".not-running-only").hide()
-    } else {
-        $(".running-only").hide()
-        $(".not-running-only").show()
-    }
+    runningSessionWarningVisibilty(settings.running)
+
   })
 }
 
@@ -282,8 +283,19 @@ function removeSharedUser(target) {
   }
 }
 
+// on-boarding process for joining rooms: Hide the "Consent" form, show the content requiring consent.
 function consentRecording() {
     $("#consent-content").show();
     $("#consent-form").hide();
 
+}
+// Show a "Session Running warning" for each room setting, which cannot be changed during a running session
+function runningSessionWarningVisibilty(isRunning) {
+    if(isRunning) {
+        $(".running-only").show()
+        $(".not-running-only").hide()
+    } else {
+        $(".running-only").hide()
+        $(".not-running-only").show()
+    }
 }
