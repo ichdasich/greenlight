@@ -584,6 +584,8 @@ en:
     subtitle: Create an Account
     title: Sign up
     with: Sign up with %{provider}
+  legal:
+    title: Imprint
   terms:
     accept: I accept the %{href}
     accept_recording: I accept the <a href="/b/terms">&nbsp;<u>Privacy Policy</u>&nbsp;</a> and consent to the recording of this session.
