@@ -423,7 +423,7 @@ ja_JP:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
-    saml: SURFconext
+    saml: TU Delft Account
   recaptcha:
     errors:
       recaptcha_unreachable: reCAPTCHA応答の検証に失敗しました。 もう一度お試しください。

@@ -408,7 +408,7 @@ zh_CN:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
-    saml: SURFconext
+    saml: TU Delft Account
   recaptcha:
     errors:
       recaptcha_unreachable: 哎呀，我们未能验证您的reCAPTCHA 响应。请再试一次。

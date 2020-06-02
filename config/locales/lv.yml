@@ -408,7 +408,7 @@ lv:
     office365: Mazmīksto Office 365
     twitter: Čivekli (Twitter)
     ldap: LDAP
-    saml: SURFconext
+    saml: TU Delft Account
   recaptcha:
     errors:
       recaptcha_unreachable: "Hmm, mēs nevarējām validēt jūsu reCAPTCHA atbildi. Lūdzu, mēģiniet vēlreiz."

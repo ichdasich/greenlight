@@ -352,7 +352,7 @@ vi_VN:
     office365:
     twitter: Twitter
     ldap:
-    saml: SURFconext
+    saml: TU Delft Account
   recaptcha:
     errors:
       recaptcha_unreachable: "Rất tiếc, chúng tôi không thể xác thực phản hồi reCAPTCHA. Vui lòng thử lại."

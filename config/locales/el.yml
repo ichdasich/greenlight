@@ -352,7 +352,7 @@ el:
     office365:
     twitter:
     ldap:
-    saml: SURFconext
+    saml: TU Delft Account
   recaptcha:
     errors:
       recaptcha_unreachable:

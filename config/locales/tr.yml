@@ -408,7 +408,7 @@ tr:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
-    saml: SURFconext
+    saml: TU Delft Account
   recaptcha:
     errors:
       recaptcha_unreachable: Hata! Gerçek kişi yanıtınızı doğrulayamadık. Lütfen tekrar deneyin.

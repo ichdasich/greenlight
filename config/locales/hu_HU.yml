@@ -408,7 +408,7 @@ hu_HU:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
-    saml: SURFconext
+    saml: TU Delft Account
   recaptcha:
     errors:
       recaptcha_unreachable: "Oppssz, a reCAPTCHA kérésed visszaigazolása sikertelen. Kérjük, próbáld újra."
