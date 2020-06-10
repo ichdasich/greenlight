@@ -43,6 +43,7 @@ class RoomsController < ApplicationController
     return redirect_to current_user.main_room, flash: { alert: I18n.t("room.room_limit") } if room_limit_exceeded
 
     # Create room
+    logger.info "Support: #{current_user.email} wants to create a new room #{@room.uid} with #{room_params}."
     @room = Room.new(name: room_params[:name], access_code: room_params[:access_code])
     @room.owner = current_user
     @room.room_settings = create_room_settings_string(room_params)
