@@ -17,6 +17,7 @@
 # with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 
 require 'bbb_api'
+require 'securerandom'
 
 class Room < ApplicationRecord
   include Deleteable
@@ -117,13 +118,15 @@ class Room < ApplicationRecord
     self.attendee_pw = RandomPassword.generate(length: 12)
   end
 
+  # Generates a three character uid chunk.
+  def uid_chunk
+    charset = ("a".."z").to_a - %w(b i l o s) + ("2".."9").to_a - %w(5 8)
+    (0...3).map { charset.to_a[SecureRandom.random_number(charset.size)] }.join
+  end
+
   # Generates a fully random room uid.
   def random_room_uid
-    # 6 character long random string of chars from a..z and 0..9
-    full_chunk = SecureRandom.alphanumeric(6).downcase
-    logger.info "Generating Random UID"
-
-    [owner.name_chunk, full_chunk[0..2], full_chunk[3..5]].join("-")
+    (0...4).map { uid_chunk }.join('-').downcase
   end
 
   # Generates a unique bbb_id based on uuid.
