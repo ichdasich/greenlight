@@ -448,7 +448,7 @@ en:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
-    saml: SURFconext
+    saml: TU Delft Account
   recaptcha:
     errors:
       recaptcha_unreachable: Oops, we failed to validate your reCAPTCHA response. Please try again.

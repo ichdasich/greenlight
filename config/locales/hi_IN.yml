@@ -352,7 +352,7 @@ hi_IN:
     office365:
     twitter: ट्विटर
     ldap:
-    saml: SURFconext
+    saml: TU Delft Account
   recaptcha:
     errors:
       recaptcha_unreachable:

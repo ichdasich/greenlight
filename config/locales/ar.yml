@@ -406,7 +406,7 @@ ar:
     office365: أوفيس 365
     twitter: تويتر
     ldap: LDAP
-    saml: SURFconext
+    saml: TU Delft Account
   recaptcha:
     errors:
       recaptcha_unreachable: عفوا، فشلنا في التحقق من صحة ردك reCAPTCHA. الرجاء المحاولة مرة أخرى.

@@ -352,7 +352,7 @@ pl_PL:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
-    saml: SURFconext
+    saml: TU Delft Account
   recaptcha:
     errors:
       recaptcha_unreachable: "Ups, nie udało się zweryfikować Twojej odpowiedzi reCAPTCHA. Proszę spróbuj ponownie."
