@@ -196,8 +196,8 @@ nl:
   bigbluebutton_exception: "Oeps, er is een fout opgetreden bij het starten van de vergadering!"
   cancel: Annuleren
   cookies:
-    cookie_info: "Cookies helpen ons onze diensten te leveren. Door onze services te gebruiken, gaat u akkoord met ons gebruik van cookies."
-    cookie_button: Daar ben ik het mee eens
+    cookie_info: Deze service vereist dat sommige cookies correct werken. Op deze site worden alleen technisch noodzakelijke cookies gebruikt. Meer informatie vindt u in ons <a href="/b/terms"> <u> Privacybeleid </u> </a>.
+    cookie_button: Sluiten
   copied: Gekopieerd
   copy: Kopiëren
   date:

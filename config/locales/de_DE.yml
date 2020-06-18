@@ -196,8 +196,8 @@ de_DE:
   bigbluebutton_exception: "Ups, beim Start der Konferenz ist ein Fehler aufgetreten!"
   cancel: Abbrechen
   cookies:
-    cookie_info: Cookies helfen uns bei der Bereitstellung unserer Dienste. Durch die Nutzung der Dienste stimmen Sie der Nutzung von Cookies zu.
-    cookie_button: Ich stimme zu
+    cookie_info: Für diesen Dienst sind einige Cookies erforderlich, um ordnungsgemäß zu funktionieren. Auf dieser Website werden nur technisch notwendige Cookies verwendet. Weitere Informationen finden Sie in unserer <a href="/b/terms"> <u> Datenschutzrichtlinie </ u> </a>.
+    cookie_button: Schließen
   copied: Kopiert
   copy: Kopieren
   date:
