@@ -73,9 +73,13 @@ class SessionsController < ApplicationController
     # Scope user to domain if the user is not a super admin
     user = User.include_deleted.find_by(email: session_params[:email].downcase, provider: @user_domain) unless is_super_admin
 
+    if User.exists?(email: session_params[:email], provider: 'saml')
+      logger.info "Support: #{session_params[:email]} exists." 
+    end
     # Check user with that email exists
     return redirect_to(signin_path, alert: I18n.t("invalid_credentials")) unless user
     logger.info "Support: #{session_params[:email]} exists."
+
 
     # Check if authenticators have switched
     return switch_account_to_local(user) if !is_super_admin && auth_changed_to_local?(user)
