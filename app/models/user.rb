@@ -217,7 +217,7 @@ class User < ApplicationRecord
 
   # Check if domain is required to use SAML
   def check_domain
-    if Rails.configuration.deny_email_domain.any? && !email.end_with?(*Rails.configuration.deny_email_domain)
+    if Rails.configuration.deny_email_domain.any? && email.end_with?(*Rails.configuration.deny_email_domain)
       errors.add(:email, I18n.t("errors.messages.domain",
         email_domain: Rails.configuration.deny_email_domain.join('" ' + I18n.t("modal.login.or") + ' "')))
     end
