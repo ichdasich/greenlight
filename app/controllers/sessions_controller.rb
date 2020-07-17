@@ -75,7 +75,7 @@ class SessionsController < ApplicationController
 
     if User.exists?(email: session_params[:email], provider: 'saml')
       logger.info "Support: #{session_params[:email]} exists in SAML, redirecting.." 
-      return redirect_to("/b/auth/saml", notice: I18n.t("saml_redirect"))
+      return redirect_to("/b/auth/saml", success: I18n.t("saml_redirect"))
     end
 
     # Check user with that email exists
