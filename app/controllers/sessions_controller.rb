@@ -61,6 +61,7 @@ class SessionsController < ApplicationController
     @user = User.new
   end
 
+  # greenlight_account?
   # POST /users/login
   def create
     logger.info "Support: #{session_params[:email]} is attempting to login."
@@ -74,6 +75,7 @@ class SessionsController < ApplicationController
 
     # Check user with that email exists
     return redirect_to(signin_path, alert: I18n.t("invalid_credentials")) unless user
+    logger.info "Support: #{session_params[:email]} exists."
 
     # Check if authenticators have switched
     return switch_account_to_local(user) if !is_super_admin && auth_changed_to_local?(user)
