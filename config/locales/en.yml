@@ -283,7 +283,7 @@ en:
       signout: Sign out
   home_room: Home Room
   info_update_success: Information successfully updated.
-  invalid_credentials: The email and password you entered did not match our records. Try again or click Forgot Password to reset your password.
+  invalid_credentials: 'The email and password you entered did not match our records. Try again or click Forgot Password to reset your password. If you are using a TU Delft email address, please log in via "Sign in with TU Delft Account".'
   invalid_login_method: Login failed due to account mismatch. You need to log in with omniauth.
   invite_message: "To invite someone to the meeting, send them this link:"
   javascript:

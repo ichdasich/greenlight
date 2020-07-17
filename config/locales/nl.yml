@@ -280,7 +280,7 @@ nl:
       signout: Afmelden
   home_room: Begin kamer
   info_update_success: Informatie succesvol bijgewerkt.
-  invalid_credentials: "Het e-mailadres en wachtwoord dat u heeft ingevoerd, komt niet overeen met onze gegevens. Probeer het opnieuw of klik op Wachtwoord vergeten om uw wachtwoord opnieuw in te stellen."
+  invalid_credentials: 'Het e-mailadres en wachtwoord dat u heeft ingevoerd, komt niet overeen met onze gegevens. Probeer het opnieuw of klik op Wachtwoord vergeten om uw wachtwoord opnieuw in te stellen. Als je een TU Delft e-mailadres gebruikt, log dan in via "Aanmelden met TU Delft Account".'
   invalid_login_method: Inloggen mislukt vanwege niet-overeenkomende account. U moet inloggen met omniauth.
   invite_message: "Stuur iemand deze link om iemand uit te nodigen voor de vergadering:"
   javascript:
