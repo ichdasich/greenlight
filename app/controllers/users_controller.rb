@@ -197,6 +197,11 @@ class UsersController < ApplicationController
     end
   end
 
+  # GET | POST /legal
+  def legal
+    redirect_to '/404' unless Rails.configuration.legal
+  end
+
   private
 
   def find_user

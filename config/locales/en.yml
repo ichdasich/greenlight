@@ -606,6 +606,8 @@ en:
     subtitle: Create an Account
     title: Sign up
     with: Sign up with %{provider}
+  legal:
+    title: Imprint
   terms:
     accept: I accept the %{href}
     accept_existing: I accept the terms and conditions
