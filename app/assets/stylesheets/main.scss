@@ -133,25 +133,6 @@
   }
 }
 
-.customBtn-saml {
-  @extend .customBtn;
-  background: #00A6D6;
-
-  .customBtn-image {
-    background: #00A6D6 image-url("saml-logo.png") no-repeat left top;
-    background-size: 18px 18px;
-    padding:10px 10px 10px 10px;
-  }
-  .customBtn-icon {
-    display: inline-block;
-    vertical-align: middle;
-    padding:13px 15px 13px 15px;
-    float:left;
-    background: #00A6D6;
-  }
-}
-
-
 .customBtn-microsoft_windows {
   @extend .customBtn;
   background: #00a1f1;
