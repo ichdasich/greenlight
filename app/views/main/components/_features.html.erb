@@ -13,29 +13,28 @@
 # with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 %>
 
+ <div class="container mt-8 mb-6 text-center">
+  <h2 class="mb-6">New <%= t("features.title") %></h2>
 
-<div class="container mt-8 mb-6 text-center">
+      <hr class="featurette-divider">
 
-  <h2 class="mb-6"><%= t("greenlight") %> <%= t("features.title") %></h2>
 
-  <div class="row feature-stamp">
-    <div class="col-lg-3 col-md-6">
-      <div class="feature-item">
-        <div class="stamp bg-primary"><i class="fas fa-chalkboard-teacher fa-2x"></i></div>
-        <h4 class="mt-4"><%= t("features.rooms") %></h4>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-      <span class="stamp bg-primary"><i class="fas fa-film fa-2x"></i></span>
-      <h4 class="mt-4"><%= t("features.recordings") %></h4>
-    </div>
-    <div class="col-lg-3 col-md-6">
-      <span class="stamp bg-primary"><i class="fas fa-pencil-alt fa-2x"></i></span>
-      <h4 class="mt-4"><%= t("features.designs") %></h4>
-    </div>
-    <div class="col-lg-3 col-md-6">
-      <span class="stamp bg-primary"><i class="fas fa-door-open fa-2x"></i></span>
-      <h4 class="mt-4"><%= t("features.authentication") %></h4>
-    </div>
-  </div>
-</div>
+
+      <div class='row'>
+       <div >
+          <h3 align='left'>Pre-Upload Presentations!</h3>
+          <p align='left'>You can now change the presentation shown when a room starts. This is especially useful if users can start the room before you join!</p> 
+          <p align='left'>To upload a new presentation, go to the room settings and upload one from your PC.</p> 
+          <br>
+          <h3 align='left'>Configure whether your room can be recorded!</h3>
+          <p align='left'>You can enable recordings for your rooms in their settings any time you want between sessions. If one of your rooms has the option to be recorded, consent from users will be collected before they join the session.</p> 
+          <p align='left'>By default, rooms no longer enable recordings for privacy reasons.</p> 
+          <br>
+          <h3 align='left'>Have more fine-grained controll about the visibility of your recordings!</h3>
+          <p align='left'>In the webinterface, you now have three options for publishing recordings via a drop-down menu:</p> 
+          <p align='left'><i class="fas fa-user-shield"></i><b> Private:</b> This is the default setting. The recording exists, but you cannot access it via the Internet.</p> 
+          <p align='left'><i class="fas fa-link"></i><b> Unlisted:</b> With this setting, you can access the recording (via the link behind 'Presentation'). Everyone with the link can watch the recording, until you set it back to private.</p> 
+          <p align='left'><i class="fas fa-globe"></i><b> Public:</b> With this setting, the recording will <em>also</em> be listed on the public start-page of your online meeting room. Convenient, if you want to make several lecture recordings publicly accessible to your students.</p> 
+       </div>
+   </div>
+ </div>

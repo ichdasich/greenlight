@@ -20,7 +20,7 @@ en:
   activerecord:
     attributes:
       user:
-        accepted_terms: "Terms and Conditions"
+        accepted_terms: "Privacy Policy"
         email: Email
         name: Name
         password: Password
@@ -45,9 +45,9 @@ en:
         invalid: Invalid URL
       legal:
         change: Change URL
-        info: Change the Terms Link that appears in the bottom of the page
-        placeholder: Terms URL...
-        title: Terms
+        info: Change the Imprint link that appears in the bottom of the page
+        placeholder: Imprint URL...
+        title: Imprint
         invalid: Invalid URL
       privpolicy:
         change: Change URL
@@ -214,8 +214,8 @@ en:
   bigbluebutton_exception: Oops, there was an error when starting the meeting!
   cancel: Cancel
   cookies:
-    cookie_info: Cookies help us deliver our services. By using our services, you agree to our use of cookies.
-    cookie_button: I Agree
+    cookie_info: This service requires some cookies to work properly. Only technically necessary cookies are used on this site. Find more details in our <a href="/b/terms"><u>Privacy Policy</u></a>.
+    cookie_button: Close
   copied: Copied
   copy: Copy
   date:
@@ -274,15 +274,15 @@ en:
       help: If you believe this is a mistake, please contact your system administrator.
   expired_reset_token: Password reset link has expired!
   features:
-    title: Features
+    title: Features on bbb.surfcloud.nl
     rooms: Personalized Rooms
     recordings: Recording Management
-    designs: Custom Designs
-    authentication: User Authentication
+    designs: Shared Whiteboard
+    authentication: Authentication with TU Delft SSO
   footer:
-    legal: Terms
+    legal: Imprint
     privpolicy: Privacy Policy
-    powered_by: Powered by %{href}.
+    powered_by: Powered by %{href}
   forgot_password:
     subtitle: Forgot Password
     email: Email
@@ -313,9 +313,9 @@ en:
     search:
       start: Start searching...
   landing:
-    about: "%{href} is a simple front-end for your BigBlueButton open-source web conferencing server. You can create your own rooms to host sessions, or join others using a short and convenient link."
-    welcome: Welcome to BigBlueButton.
-    video: Watch our tutorial on using Greenlight
+    about: "We have set up this instance of BigBlueButton as a pilot for faculty, staff and students at TU Delft and elsewhere to use for online learning during the closure of the university due to measures to contain the COVID-19 Pandemic. Feel free to use it!"
+    welcome: Welcome to bbb.surfcloud.nl
+    video: For more information on using BigBlueButton, watch this tutorial
     upgrade: Show me how to upgrade to 2.0!
     version: We've released a new version of Greenlight, but your database isn't compatible.
   language_default: Default (browser language)
@@ -542,7 +542,7 @@ en:
     invalid_provider: You have entered an invalid url. Please check the url and try again.
     invitation_description: You have been invited to join %{name} using BigBlueButton. To join, click the link above and enter your name.  
     invited: You have been invited to join
-    recording_present: I acknowledge that this session is going to be recorded. This may include my voice and video if enabled.
+    recording_present: The session you are about to join is going to be recorded. This includes all voice, video, whiteboard, and chat contributions you make during the session. The recording may be made public or shared with third parties after the session. Please indicate whether you consent to this by checking the button to the left. Please refer to our <a href="%{pp_link}"><u>Privacy Policy</u></a> for further information!
     invite_participants: Invite Participants
     join: Join
     last_session: Last session on %{session}
@@ -614,8 +614,8 @@ en:
     title: Imprint
   terms:
     accept: I accept the %{href}
-    accept_existing: I accept the terms and conditions
-    title: Terms and Conditions
+    accept_existing: I accept the Privacy Policy
+    title: Privacy Policy
   test_install: >
     This deployment is using a pre-configured testing server, you should replace this with your own.
     For details, see the %{href}.
