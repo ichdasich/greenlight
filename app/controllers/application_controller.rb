@@ -84,10 +84,10 @@ class ApplicationController < ActionController::Base
           help: I18n.t("errors.maintenance.help"),
         }
     end
-    if @settings.get_value("Maintenance Banner").present?
-      unless cookies[:maintenance_window] == @settings.get_value("Maintenance Banner")
-        flash.now[:maintenance] = @settings.get_value("Maintenance Banner")
-      end
+
+    maintenance_string = @settings.get_value("Maintenance Banner").presence || Rails.configuration.maintenance_window
+    if maintenance_string.present?
+      flash.now[:maintenance] = maintenance_string unless cookies[:maintenance_window] == maintenance_string
     end
   end
 
@@ -235,7 +235,7 @@ class ApplicationController < ActionController::Base
       path = if allow_greenlight_accounts?
         signin_path
       elsif Rails.configuration.loadbalanced_configuration
-        omniauth_login_url(:bn_launcher)
+        "#{Rails.configuration.relative_url_root}/auth/bn_launcher"
       else
         signin_path
       end
