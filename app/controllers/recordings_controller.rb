@@ -24,9 +24,19 @@ class RecordingsController < ApplicationController
 
   # POST /:meetingID/:record_id
   def update
-    meta = {
-      "meta_#{META_LISTED}" => (params[:state] == "public"),
-    }
+    if params[:state] == "public"
+      meta = {
+        "meta_#{META_LISTED}" => "true",
+      }
+    elsif params[:state] == "unlisted"
+      meta = {
+        "meta_#{META_LISTED}" => "unlisted",
+      }
+    else
+      meta = {
+        "meta_#{META_LISTED}" => "false",
+      }
+    end
 
     res = update_recording(params[:record_id], meta)
 
