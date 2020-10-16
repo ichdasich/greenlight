@@ -274,7 +274,7 @@ en:
       help: If you believe this is a mistake, please contact your system administrator.
   expired_reset_token: Password reset link has expired!
   features:
-    title: Features on bbb.surfcloud.nl
+    title: Features on bbb.tbm.tudelft.nl
     rooms: Personalized Rooms
     recordings: Recording Management
     designs: Shared Whiteboard
@@ -314,7 +314,7 @@ en:
       start: Start searching...
   landing:
     about: "We have set up this instance of BigBlueButton as a pilot for faculty, staff and students at TU Delft and elsewhere to use for online learning during the closure of the university due to measures to contain the COVID-19 Pandemic. Feel free to use it!"
-    welcome: Welcome to bbb.surfcloud.nl
+    welcome: Welcome to bbb.tbm.tudelft.nl
     video: For more information on using BigBlueButton, watch this tutorial
     upgrade: Show me how to upgrade to 2.0!
     version: We've released a new version of Greenlight, but your database isn't compatible.

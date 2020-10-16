@@ -273,7 +273,7 @@ nl:
       help: Neem contact op met uw systeembeheerder als u denkt dat dit een vergissing is.
   expired_reset_token: De link voor het opnieuw instellen van het wachtwoord is verlopen!
   features:
-    title: Functies op bbb.surfcloud.nl
+    title: Functies op bbb.tbm.tudelft.nl
     rooms: Gepersonaliseerde digitale colleges
     recordings: Opnamebeheer
     designs: Gedeeld whiteboard
@@ -313,7 +313,7 @@ nl:
       start: Begin zoekopdracht
   landing:
     about: We hebben dit exemplaar van BigBlueButton opgezet als een pilot voor docenten, medewerkers en studenten van de TU Delft en elders om te gebruiken voor online leren tijdens de sluiting van de universiteit vanwege maatregelen om de COVID-19 Pandemic in te perken. Voel je vrij om het te gebruiken!
-    welcome: Welkom bij bbb.surfcloud.nl
+    welcome: Welkom bij bbb.tbm.tudelft.nl
     video: Bekijk deze tutorial voor meer informatie over het gebruik van BigBlueButton
     upgrade: Laat me zien hoe ik kan upgraden naar 2.0!
     version: "We hebben een nieuwe versie van Greenlight uitgebracht, maar uw database is niet compatibel."
