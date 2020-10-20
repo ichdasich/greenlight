@@ -89,6 +89,13 @@ module Greenlight
     # Determine if GreenLight should enable email verification
     config.enable_email_verification = (ENV['ALLOW_MAIL_NOTIFICATIONS'] == "true")
 
+    # Determine if GreenLight should deny local logins from a certain mail-domain
+    config.deny_email_domain = if ENV["DENY_MAIL_DOMAIN"].present?
+      ENV["DENY_MAIL_DOMAIN"].split(/[\s,]+/)
+    else
+      []
+    end
+
     # Determine if GreenLight should allow non-omniauth signup/login.
     config.allow_user_signup = (ENV['ALLOW_GREENLIGHT_ACCOUNTS'] == "true")
 
