@@ -216,8 +216,8 @@ nl:
   bigbluebutton_exception: "Oeps, er is een fout opgetreden bij het starten van de vergadering!"
   cancel: Annuleren
   cookies:
-    cookie_info: "Cookies helpen ons onze diensten te leveren. Door onze services te gebruiken, gaat u akkoord met ons gebruik van cookies."
-    cookie_button: Daar ben ik het mee eens
+    cookie_info: Deze service vereist dat sommige cookies correct werken. Op deze site worden alleen technisch noodzakelijke cookies gebruikt. Meer informatie vindt u in ons <a href="/b/terms"> <u> Privacybeleid </u> </a>.
+    cookie_button: Sluiten
   copied: Gekopieerd
   copy: Kopiëren
   date:
@@ -275,11 +275,11 @@ nl:
       help: Neem contact op met uw systeembeheerder als u denkt dat dit een vergissing is.
   expired_reset_token: De link voor het opnieuw instellen van het wachtwoord is verlopen!
   features:
-    title: Kenmerken
-    rooms: Gepersonaliseerde kamers
+    title: Functies op bbb.tbm.tudelft.nl
+    rooms: Gepersonaliseerde digitale colleges
     recordings: Opnamebeheer
-    designs: Aangepaste ontwerpen
-    authentication: Gebruikersverificatie
+    designs: Gedeeld whiteboard
+    authentication: Authenticatie met TU Delft SSO
   footer:
     legal: Algemene voorwaarden
     privpolicy: Privacy Beleid
@@ -314,9 +314,9 @@ nl:
     search:
       start: Begin zoekopdracht
   landing:
-    about: "%{href} is een eenvoudige front-end voor uw BigBlueButton open-source webconferentieserver. U kunt uw eigen ruimtes maken om sessies te hosten of u kunt via een korte en handige link lid worden van anderen."
-    welcome: Welkom bij BigBlueButton.
-    video: Bekijk onze tutorial over het gebruik van Greenlight
+    about: We hebben dit exemplaar van BigBlueButton opgezet als een pilot voor docenten, medewerkers en studenten van de TU Delft en elders om te gebruiken voor online leren tijdens de sluiting van de universiteit vanwege maatregelen om de COVID-19 Pandemic in te perken. Voel je vrij om het te gebruiken!
+    welcome: Welkom bij bbb.tbm.tudelft.nl
+    video: Bekijk deze tutorial voor meer informatie over het gebruik van BigBlueButton
     upgrade: Laat me zien hoe ik kan upgraden naar 2.0!
     version: "We hebben een nieuwe versie van Greenlight uitgebracht, maar uw database is niet compatibel."
   language_default: Standaard (browsertaal)
@@ -547,7 +547,7 @@ nl:
     invalid_provider: U heeft een ongeldige URL ingevoerd. Controleer de URL en probeer het opnieuw.
     invitation_description: "Je bent uitgenodigd om deel te nemen aan %{name} via BigBlueButton. Klik op bovenstaande link en voert u uw naam in om te beginnen."  
     invited: Je bent uitgenodigd om lid te worden
-    recording_present: Ik erken dat deze sessie zal worden opgenomen. Deze opname kan mijn stem en video bevatten indien dit is ingeschakeld.
+    recording_present: De sessie waaraan u wilt deelnemen, wordt opgenomen. Dit omvat alle spraak-, video-, whiteboard- en chatbijdragen die u tijdens de sessie levert. De opname kan na de sessie openbaar worden gemaakt of worden gedeeld met derden. Geef aan of u hiermee instemt. Raadpleeg ons <a href="%{pp_link}"> <u> Privacybeleid </u> </a> voor meer informatie!
     invite_participants: Deelnemers uitnodigen
     join: Toetreden
     last_session: "Laatste sessie op %{session}"

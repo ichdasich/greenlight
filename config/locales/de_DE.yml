@@ -216,8 +216,8 @@ de_DE:
   bigbluebutton_exception: "Ups, beim Start der Konferenz ist ein Fehler aufgetreten!"
   cancel: Abbrechen
   cookies:
-    cookie_info: Cookies helfen uns bei der Bereitstellung unserer Dienste. Durch die Nutzung der Dienste stimmen Sie der Nutzung von Cookies zu.
-    cookie_button: Ich stimme zu
+    cookie_info: Für diesen Dienst sind einige Cookies erforderlich, um ordnungsgemäß zu funktionieren. Auf dieser Website werden nur technisch notwendige Cookies verwendet. Weitere Informationen finden Sie in unserer <a href="/b/terms"> <u> Datenschutzrichtlinie </ u> </a>.
+    cookie_button: Schließen
   copied: Kopiert
   copy: Kopieren
   date:
@@ -228,7 +228,7 @@ de_DE:
   docs: Dokumentation
   email: E-Mail
   email_sent: "%{email_type}: Es wurde eine E-Mail an Sie verschickt! (Bitte prüfen Sie Ihren Spamordner, falls Sie die E-Mail nicht erhalten haben)"
-  enter_your_name: Name bitte eingeben!
+  enter_your_name: Bitte Namen eingebenBitte Namen eingeben.
   errors:
     bigbluebutton:
       help: "Bitte stellen Sie sicher, dass die notwendigen Schritte durchgeführt wurden. <a href=\"%{doc_link}\">Mehr erfahren</a>"
@@ -312,7 +312,7 @@ de_DE:
     search:
       start: Suche beginnen...
   landing:
-    about: "%{href} ist eine benutzerfreundliche Oberfläche für das Open-Source-Webkonferenzsystem BigBlueButton. Sie können Ihre eigenen Räume erstellen, um Konferenzen zu veranstalten oder können bestehenden Konferenzen über einen kurzen und bequemen Link beitreten."
+    about: "Greenlight ist eine benutzerfreundliche Oberfläche für das Open-Source-Webkonferenzsystem BigBlueButton. Sie können Ihre eigenen Räume erstellen, um Konferenzen zu veranstalten oder können bestehenden Konferenzen über einen kurzen und bequemen Link beitreten."
     welcome: Willkommen zu BigBlueButton.
     video: Schauen Sie sich unsere Anleitung zur Verwendung von Greenlight an
     upgrade: "Zeigen Sie mir, wie ich auf Version 2.0. update!"
