@@ -315,7 +315,7 @@ en:
     search:
       start: Start searching...
   landing:
-    about: "We have set up this instance of BigBlueButton as a pilot for faculty, staff and students at TU Delft and elsewhere to use for online learning during the closure of the university due to measures to contain the COVID-19 Pandemic. Feel free to use it!"
+    about: "The faculty of TBM at TU Delft has set up this instance of BigBlueButton as a pilot for faculty, staff and students at TU Delft and elsewhere to use for online learning during the closure of the university due to measures to contain the COVID-19 Pandemic. Feel free to use it, but we do not provide any guarrantees on the availability and reliability of this service!"
     welcome: Welcome to bbb.tbm.tudelft.nl
     video: For more information on using BigBlueButton, watch this tutorial
     upgrade: Show me how to upgrade to 2.0!
