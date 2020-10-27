@@ -280,7 +280,7 @@ zh_CN:
   footer:
     legal: 条款
     privpolicy: 隐私政策
-    powered_by: "Powered by%{href}"
+    powered_by: "Powered by %{href}"
   forgot_password:
     subtitle: 忘记密码
     email: Email
