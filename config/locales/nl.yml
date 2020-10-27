@@ -256,7 +256,7 @@ nl:
       accepted: moet worden geaccepteerd
       confirmation: "komt niet overeen met %{attribute}"
       inclusion: is niet opgenomen in de lijst
-      domain: gebruikers van tudelft.nl moeten gebruik maken van de TU Delft account login
+      domain: gebruikers van tudelft.nl moeten gebruik maken van de SURFconext account login
     no_provider:
       message: "De site die u probeert te openen, is niet ingeschakeld"
       help: Neem contact op met uw systeembeheerder om Greenlight in te stellen
@@ -301,7 +301,7 @@ nl:
   home_room: Begin kamer
   info_update_success: Informatie succesvol bijgewerkt.
   invalid_credentials: 'Het e-mailadres en wachtwoord dat u heeft ingevoerd, komt niet overeen met onze gegevens. Probeer het opnieuw of klik op Wachtwoord vergeten om uw wachtwoord opnieuw in te stellen.'
-  saml_redirect: "We hebben uw account gemigreerd naar de single-sign-on van de TU Delft. Gebruik 'Inloggen met TU Delft Account' voor je volgende login."
+  saml_redirect: "We hebben uw account gemigreerd naar de single-sign-on van SURF (SURFconext). Gebruik 'Inloggen met SURFconext' voor je volgende login."
   invalid_login_method: Inloggen mislukt vanwege niet-overeenkomende account. U moet inloggen met omniauth.
   invite_message: "Stuur iemand deze link om iemand uit te nodigen voor de vergadering:"
   javascript:
@@ -473,7 +473,7 @@ nl:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
-    saml: TU Delft Account
+    saml: SURFconext
   recaptcha:
     errors:
       recaptcha_unreachable: "Oeps, we hebben uw reCAPTCHA-antwoord niet kunnen valideren. Probeer het opnieuw."
