@@ -50,8 +50,10 @@
     <div class="dropdown">
       <% if recording[:metadata][:"gl-listed"] == "true" %>
         <button class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown"><i class="dropdown-icon fas fa-globe px-2"></i> <%= t("recording.visibility.public") %></button>
-      <% else %>
+      <% elsif recording[:metadata][:"gl-listed"] == "unlisted" %>
         <button class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown"><i class="dropdown-icon fas fa-link px-2"></i> <%= t("recording.visibility.unlisted") %></button>
+      <% else %>
+        <button class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown"><i class="dropdown-icon fas fa-user-shield px-2"></i> <%= t("recording.visibility.private") %></button>
       <% end %>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <%= button_to update_recording_path(meetingID: recording[:meetingID], record_id: recording[:recordID], state: "public"), class: "dropdown-item", "data-disable": "" do %>
@@ -59,6 +61,9 @@
         <% end %>
         <%= button_to update_recording_path(meetingID: recording[:meetingID], record_id: recording[:recordID], state: "unlisted"), class: "dropdown-item", "data-disable": "" do %>
           <i class="dropdown-icon fas fa-link"></i> <%= t("recording.visibility.unlisted") %>
+        <% end %>
+        <%= button_to update_recording_path(meetingID: recording[:meetingID], record_id: recording[:recordID], state: "private"), class: "dropdown-item", "data-disable": "" do %>
+          <i class="dropdown-icon fas fa-user-shield"></i> <%= t("recording.visibility.private") %>
         <% end %>
       </div>
     </div>

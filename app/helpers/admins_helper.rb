@@ -72,8 +72,10 @@ module AdminsHelper
   def recording_default_visibility_string
     if @settings.get_value("Default Recording Visibility") == "public"
       I18n.t("recording.visibility.public")
-    else
+    elsif @settings.get_value("Default Recording Visibility") == "unlisted"
       I18n.t("recording.visibility.unlisted")
+    else
+      I18n.t("recording.visibility.private")
     end
   end
 
