@@ -37,6 +37,7 @@ en:
         info: Only allow authenticated users to join a room
         title: Require Authentication for Rooms
         user-info: You must sign in above to join this room.
+        user-info-saml: You must sign in with your TU Delft account to join this room.
       branding:
         change: Change Image
         info: Change the branding image that appears in the top left corner

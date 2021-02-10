@@ -37,6 +37,7 @@ de_DE:
         info: Nur authentifizierte Nutzer dürfen diesen Raum betreten
         title: Betreten des Raums erfordert Authentifizierung
         user-info: "Sie müssen sich oben anmelden, um diesem Raum beitreten zu können."
+        user-info-saml: "Melden Sie sich mit ihrem TU Delft Account an um diesem Raum beitreten zu können."
       branding:
         change: Bild ändern
         info: Das in der linken oberen Ecke dargestellte Logo ändern
