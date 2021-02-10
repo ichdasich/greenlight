@@ -53,6 +53,7 @@ gem 'omniauth-google-oauth2'
 gem 'omniauth_openid_connect'
 gem 'omniauth-bn-launcher', '~> 0.1.3'
 gem 'net-ldap'
+gem 'omniauth-saml'
 gem 'bn-ldap-authentication', '~> 0.1.4'
 gem 'omniauth-bn-office365', '~> 0.1.1'
 
