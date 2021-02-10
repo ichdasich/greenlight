@@ -31,9 +31,14 @@ module RoomsHelper
   def room_authentication_required_saml
     if room_setting_with_config("samlauth")
       logger.info "SAML Auth Activated"
-      if current_user.nil? || current_user.provider == "saml"
+      if current_user.nil? 
+        logger.info "User logged in"
         true
+      elsif current_user.provider == "saml"
+        logger.info "User in SAML"
+        false
       else
+        logger.info "User not in SAML"
         false
       end
     else
