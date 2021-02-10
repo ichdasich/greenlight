@@ -307,6 +307,7 @@ class RoomsController < ApplicationController
   def room_settings
     # Respond with JSON object of the room_settings
     respond_to do |format|
+      logger.info format.json { render body: @room.room_settings }
       format.json { render body: @room.room_settings }
     end
   end
