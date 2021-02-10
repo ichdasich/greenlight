@@ -37,6 +37,7 @@ nl:
         info: Sta alleen geverifieerde gebruikers toe om deel te nemen aan een ruimte
         title: Verificatie vereist voor kamers
         user-info: Je moet hierboven inloggen om lid te kunnen worden van deze kamer.
+        user-info-saml:  Je moet inloggen met je TU Delft NetID via SURFconext om deel te nemen.
       branding:
         change: Wijzig afbeelding
         info: Wijzig de merkafbeelding die in de linkerbovenhoek wordt weergegeven
@@ -447,6 +448,7 @@ nl:
       start: Sta toe dat elke gebruiker deze vergadering kan starten
       footer_text: Aanpassing aan uw kamer kunnen op elk moment worden gedaan.
       recording: Sta toe dat de ruimte wordt opgenomen
+      samlauth: Alleen voor gebruikers met een TU Delft account
     rename_room:
       name_placeholder: Voer een nieuwe kamernaam in...
     share_access:

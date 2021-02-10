@@ -37,6 +37,7 @@ en:
         info: Only allow authenticated users to join a room
         title: Require Authentication for Rooms
         user-info: You must sign in above to join this room.
+        user-info-saml: You must sign in with your TU Delft account via SURFconext to join this room.
       branding:
         change: Change Image
         info: Change the branding image that appears in the top left corner
@@ -175,6 +176,8 @@ en:
         info: Gives all users moderator privileges in BigBlueButton when they join the meeting.
       recordings:
         info: Allows room owners to specify whether they want the option to record a room or not. If enabled, the moderator must still click the "Record" button once the meeting has started.
+      samlauth:
+        info: Requires users to be authenticated via SAML to join the room.
       options:
         disabled: Disabled
         enabled: Always Enabled
@@ -448,6 +451,7 @@ en:
       start: Allow any user to start this meeting
       footer_text: Adjustment to your room can be done at anytime.
       recording: Allow room to be recorded
+      samlauth: Only allow TU Delft users
     rename_room:
       name_placeholder: Enter a new room name...
     share_access:

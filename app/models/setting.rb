@@ -76,6 +76,8 @@ class Setting < ApplicationRecord
       room_config_setting("all-join-moderator")
     when "Room Configuration Recording"
       room_config_setting("recording")
+    when "Room Configuration SAML Auth"
+      room_config_setting("samlauth")
     end
   end
 
