@@ -28,6 +28,14 @@ module RoomsHelper
       current_user.nil?
   end
 
+  def room_authentication_required_saml
+    if room_setting_with_config("samlauth")
+      current_user.nil?
+    else
+      false
+    end
+  end
+
   def current_room_exceeds_limit(room)
     # Get how many rooms need to be deleted to reach allowed room number
     limit = @settings.get_value("Room Limit").to_i
