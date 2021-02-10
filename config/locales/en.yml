@@ -176,6 +176,8 @@ en:
         info: Gives all users moderator privileges in BigBlueButton when they join the meeting.
       recordings:
         info: Allows room owners to specify whether they want the option to record a room or not. If enabled, the moderator must still click the "Record" button once the meeting has started.
+      samlauth:
+        info: Requires users to be authenticated via SAML to join the room.
       options:
         disabled: Disabled
         enabled: Always Enabled
