@@ -33,6 +33,7 @@ module RoomsHelper
       logger.info "SAML Auth Activated"
       current_user.nil?
     else
+      logger.info "SAML Auth Not Activated"
       false
     end
   end
