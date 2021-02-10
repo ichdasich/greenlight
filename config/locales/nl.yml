@@ -448,6 +448,7 @@ nl:
       start: Sta toe dat elke gebruiker deze vergadering kan starten
       footer_text: Aanpassing aan uw kamer kunnen op elk moment worden gedaan.
       recording: Sta toe dat de ruimte wordt opgenomen
+      samlauth: Alleen voor gebruikers met een TU Delft account
     rename_room:
       name_placeholder: Voer een nieuwe kamernaam in...
     share_access:

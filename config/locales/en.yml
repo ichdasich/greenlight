@@ -37,7 +37,7 @@ en:
         info: Only allow authenticated users to join a room
         title: Require Authentication for Rooms
         user-info: You must sign in above to join this room.
-        user-info-saml: You must sign in with your TU Delft account to join this room.
+        user-info-saml: You must sign in with your TU Delft account via SURFconext to join this room.
       branding:
         change: Change Image
         info: Change the branding image that appears in the top left corner
@@ -449,6 +449,7 @@ en:
       start: Allow any user to start this meeting
       footer_text: Adjustment to your room can be done at anytime.
       recording: Allow room to be recorded
+      samlauth: Allow only TU Delft users
     rename_room:
       name_placeholder: Enter a new room name...
     share_access:

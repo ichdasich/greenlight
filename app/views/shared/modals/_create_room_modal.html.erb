@@ -84,6 +84,15 @@
                 <%= f.check_box :recording, class: "not-running-only custom-switch-input", data: { default: recording == "enabled" }, checked: false %>
                 <span class="custom-switch-indicator not-running-only float-right cursor-pointer"></span>
             </label>
+
+            <% samlauth = room_configuration("Room Configuration SAML Auth") %>
+            <% if samlauth != "disabled" %>
+              <label class="custom-switch pl-0 mt-3 mb-3 w-100 text-left d-inline-block <%= "enabled-setting" if samlauth == "enabled" %>">
+                <span class="custom-switch-description"><%= t("modal.room_settings.samlauth")%></span>
+                <%= f.check_box :samlauth, class: "custom-switch-input", data: { default: samlauth == "enabled" }, checked: false %>
+                <span class="custom-switch-indicator float-right cursor-pointer"></span>
+            </label>
+
             <% end %>
             <label id="auto-join-label" class="create-only custom-switch pl-0 mt-3 mb-3 w-100 text-left d-inline-block">
               <span class="custom-switch-description"><%= t("modal.create_room.auto_join") %></span>
