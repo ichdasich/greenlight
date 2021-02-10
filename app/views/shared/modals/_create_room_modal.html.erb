@@ -87,6 +87,7 @@
             <% end %>
 
             <% samlauth = room_configuration("Room Configuration SAML Auth") %>
+            <% logger.info "SAML auth value: #{samlauth}"%>
             <% if samlauth != "disabled" %>
               <label class="custom-switch pl-0 mt-3 mb-3 w-100 text-left d-inline-block <%= "enabled-setting" if samlauth == "enabled" %>">
                 <span class="custom-switch-description"><%= t("modal.room_settings.samlauth")%></span>
