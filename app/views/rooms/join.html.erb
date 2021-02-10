@@ -19,6 +19,8 @@
 <%= render 'rooms/components/room_event', render_recordings: valid_access_code do %>
   <% if room_authentication_required %>
     <h2><%= t("administrator.site_settings.authentication.user-info") %></h2>
+  <% elsif room_authentication_required_saml %>
+    <h2><%= t("administrator.site_settings.authentication.user-info-saml") %></h2>
   <% elsif !valid_access_code %>
     <%= form_for :room, url: login_room_path(@room.uid) do |f| %>
       <div class="input-group join-input">
