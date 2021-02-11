@@ -37,6 +37,7 @@ nl:
         info: Sta alleen geverifieerde gebruikers toe om deel te nemen aan een ruimte
         title: Verificatie vereist voor kamers
         user-info: Je moet hierboven inloggen om lid te kunnen worden van deze kamer.
+        user-info-saml:  Je moet inloggen met je TU Delft NetID via SURFconext om deel te nemen.
       branding:
         change: Wijzig afbeelding
         info: Wijzig de merkafbeelding die in de linkerbovenhoek wordt weergegeven
@@ -264,6 +265,7 @@ nl:
       accepted: moet worden geaccepteerd
       confirmation: "komt niet overeen met %{attribute}"
       inclusion: is niet opgenomen in de lijst
+      domain: gebruikers van tudelft.nl moeten gebruik maken van de SURFconext account login
     no_provider:
       message: "De site die u probeert te openen, is niet ingeschakeld"
       help: Neem contact op met uw systeembeheerder om Greenlight in te stellen
@@ -307,7 +309,8 @@ nl:
       signout: Afmelden
   home_room: Begin kamer
   info_update_success: Informatie succesvol bijgewerkt.
-  invalid_credentials: "Het e-mailadres en wachtwoord dat u heeft ingevoerd, komt niet overeen met onze gegevens. Probeer het opnieuw of klik op Wachtwoord vergeten om uw wachtwoord opnieuw in te stellen."
+  invalid_credentials: 'Het e-mailadres en wachtwoord dat u heeft ingevoerd, komt niet overeen met onze gegevens. Probeer het opnieuw of klik op Wachtwoord vergeten om uw wachtwoord opnieuw in te stellen.'
+  saml_redirect: "We hebben uw account gemigreerd naar de single-sign-on van SURF (SURFconext). Gebruik 'Inloggen met SURFconext' voor je volgende login."
   invalid_login_method: Inloggen mislukt vanwege niet-overeenkomende account. U moet inloggen met omniauth.
   invite_message: "Stuur iemand deze link om iemand uit te nodigen voor de vergadering:"
   javascript:
@@ -445,6 +448,7 @@ nl:
       start: Sta toe dat elke gebruiker deze vergadering kan starten
       footer_text: Aanpassing aan uw kamer kunnen op elk moment worden gedaan.
       recording: Sta toe dat de ruimte wordt opgenomen
+      samlauth: Alleen voor gebruikers met een TU Delft account
     rename_room:
       name_placeholder: Voer een nieuwe kamernaam in...
     share_access:
@@ -479,6 +483,7 @@ nl:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
+    saml: SURFconext
     openid_connect: OpenID Connect
   recaptcha:
     errors:
