@@ -76,6 +76,8 @@ class Setting < ApplicationRecord
       room_config_setting("all-join-moderator")
     when "Room Configuration Recording"
       room_config_setting("recording")
+    when "Room Configuration Streaming"
+      room_config_setting("streaming")
     end
   end
 

@@ -175,6 +175,8 @@ en:
         info: Gives all users moderator privileges in BigBlueButton when they join the meeting.
       recordings:
         info: Allows room owners to specify whether they want the option to record a room or not. If enabled, the moderator must still click the "Record" button once the meeting has started.
+      streaming:
+        info: Allows users to automatically stream the room.
       options:
         disabled: Disabled
         enabled: Always Enabled
@@ -446,6 +448,7 @@ en:
       start: Allow any user to start this meeting
       footer_text: Adjustment to your room can be done at anytime.
       recording: Allow room to be recorded
+      streaming: Stream this room
     rename_room:
       name_placeholder: Enter a new room name...
     share_access:
