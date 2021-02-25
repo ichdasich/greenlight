@@ -70,6 +70,7 @@
             </div>
           </div>
             <% if display_streaming %>
+              </br>
               <%= t("room.streaming_at", href: link_to(request.base_url + "/streams" + @room.invite_path[2..-1] + "/", request.base_url + "/streams" + @room.invite_path[2..-1] + "/", target: "_blank", rel: "noopener")).html_safe %>
             <% end %>
         <% end %>
