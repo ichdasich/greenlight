@@ -338,6 +338,7 @@ class RoomsController < ApplicationController
       "joinModerator": options[:all_join_moderator] == "1",
       "recording": options[:recording] == "1",
       "samlauth": options[:samlauth] == "1",
+      "streaming": options[:streaming] == "1",
     }
 
     room_settings.to_json
@@ -347,6 +348,7 @@ class RoomsController < ApplicationController
     params.require(:room).permit(:name, :auto_join, :mute_on_join, :access_code,
       :require_moderator_approval, :anyone_can_start, :all_join_moderator,
       :recording, :samlauth, :presentation)
+      :recording, :streaming, :presentation)
   end
 
   # Find the room from the uid.
@@ -443,6 +445,8 @@ class RoomsController < ApplicationController
       "Room Configuration Recording"
     when "samlauth"
       "Room Configuration SAML Auth"
+    when "streaming"
+      "Room Configuration Streaming"
     end
 
     case @settings.get_value(config)

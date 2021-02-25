@@ -78,6 +78,8 @@ class Setting < ApplicationRecord
       room_config_setting("recording")
     when "Room Configuration SAML Auth"
       room_config_setting("samlauth")
+    when "Room Configuration Streaming"
+      room_config_setting("streaming")
     end
   end
 
