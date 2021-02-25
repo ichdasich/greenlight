@@ -65,11 +65,7 @@
         </label>
       <% end %>
       <% if display_streaming %>
-        <%= t("room.streaming_at", href: link_to(request.base_url + "/streams/" + @room.invite_path, request.base_url + "/streams/" + @room.invite_path, target: "_blank", rel: "noopener")).html_safe %>
-        <label class="custom-control custom-checkbox">
-          <input id="joiner-consent" type="checkbox" class="custom-control-input" required>
-          <h4 class="text-left text-danger mt-4 custom-control-label"><%= t("room.streaming_present") %></h4>
-        </label>
+        <%= t("room.streaming_at", href: link_to(request.base_url + "/streams" + @room.invite_path[2..-1] + "/", request.base_url + "/streams" + @room.invite_path[2..-1] + "/", target: "_blank", rel: "noopener")).html_safe %>
       <% end %>
     <% end %>
   <% end %>
