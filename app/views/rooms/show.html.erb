@@ -33,6 +33,9 @@
         </div>
         <h4 class="text-left mb-6"><%= @room.sessions %> <%= t("room.sessions") %><% unless hide_recording_tables %> | <%= @recordings.length %> <%= t("room.recordings") %><% end %></h4>
         <% unless exceeds_limit %>
+        <% if display_streaming %>
+          <%= t("room.streaming_at", href: link_to(request.base_url + "/streams" + @room.invite_path[2..-1] + "/", request.base_url + "/streams" + @room.invite_path[2..-1] + "/", target: "_blank", rel: "noopener")).html_safe %>
+        <% end %>
           <label class="form-label"><%= t("room.invite_participants") %></label>
           <div class="row">
             <div class="col-lg-6 col-md-12 mt-2">
