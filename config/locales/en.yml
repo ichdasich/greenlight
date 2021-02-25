@@ -560,7 +560,7 @@ en:
     invited: You have been invited to join
     recording_present: I acknowledge that this session is going to be recorded. This may include my voice and video if enabled.
     streaming_present: I understand that this session is being live-streamed and may be viewed by people not included in the room list.
-    streaming_at: This room is also being streamed to %{href}
+    streaming_at: This room is also being streamed to: %{href}
     invite_participants: Invite Participants
     join: Join
     last_session: Last session on %{session}
