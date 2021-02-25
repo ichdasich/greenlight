@@ -57,8 +57,8 @@
       <% if display_joiner_consent %>
         <label class="custom-control custom-checkbox">
           <input id="joiner-consent" type="checkbox" class="custom-control-input" required>
-          <h4 class="text-left text-danger mt-4 custom-control-label"><%= I18n.t("room.recording_present", pp_link: "/b/terms").html_safe %></h4>
-          <h4 class="text-left text-danger mt-4 custom-control-label"><%= t("room.streaming_present") %></h4>
+          <h4 class="text-left text-danger mt-4 custom-control-label"><%= I18n.t("room.recording_present", pp_link: "/b/terms").html_safe %>
+          </br><%= t("room.streaming_present") %></h4>
         </label>
       <% else %>
         <% if display_streaming %>
