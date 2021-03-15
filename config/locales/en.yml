@@ -37,6 +37,7 @@ en:
         info: Only allow authenticated users to join a room
         title: Require Authentication for Rooms
         user-info: You must sign in above to join this room.
+        user-info-saml: You must sign in with your TU Delft account via SURFconext to join this room.
       branding:
         change: Change Image
         info: Change the branding image that appears in the top left corner
@@ -175,6 +176,8 @@ en:
         info: Gives all users moderator privileges in BigBlueButton when they join the meeting.
       recordings:
         info: Allows room owners to specify whether they want the option to record a room or not. If enabled, the moderator must still click the "Record" button once the meeting has started.
+      samlauth:
+        info: Requires users to be authenticated via SAML to join the room.
       options:
         disabled: Disabled
         enabled: Always Enabled
@@ -265,6 +268,7 @@ en:
       accepted: must be accepted
       confirmation: doesn't match %{attribute}
       inclusion: is not included in the list
+      domain: users from %{email_domain} should use the SURFconext account login
     no_provider:
       message: The site you are trying to access is not enabled
       help: Please contact your system administrator to setup Greenlight
@@ -308,7 +312,8 @@ en:
       signout: Sign out
   home_room: Home Room
   info_update_success: Information successfully updated.
-  invalid_credentials: The email and password you entered did not match our records. Try again or click Forgot Password to reset your password.
+  invalid_credentials: 'The email and password you entered did not match our records. Try again or click Forgot Password to reset your password.'
+  saml_redirect: "We migrated your account to SURF's single-sign-on system SURFconext. Please use 'Login with SURFconext' for your next login."
   invalid_login_method: Login failed due to account mismatch. You need to log in with omniauth.
   invite_message: "To invite someone to the meeting, send them this link:"
   javascript:
@@ -446,6 +451,7 @@ en:
       start: Allow any user to start this meeting
       footer_text: Adjustment to your room can be done at anytime.
       recording: Allow room to be recorded
+      samlauth: Only allow TU Delft users
     rename_room:
       name_placeholder: Enter a new room name...
     share_access:
@@ -480,6 +486,7 @@ en:
     office365: Office 365
     twitter: Twitter
     ldap: LDAP
+    saml: SURFconext
     openid_connect: OpenID Connect
   recaptcha:
     errors:
