@@ -10,24 +10,6 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'aws-sdk-s3', '~> 1.88.1'
 gem 'bcrypt', '~> 3.1.7'
-
-# Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
-
-gem 'sprockets', '< 4.0.0'
-
-# Authentication.
-gem 'omniauth'
-gem 'omniauth-twitter'
-gem 'omniauth-google-oauth2'
-gem 'omniauth_openid_connect'
-gem 'omniauth-bn-launcher', '~> 0.1.3'
-gem 'net-ldap'
-gem 'omniauth-saml'
-gem 'bn-ldap-authentication', '~> 0.1.4'
-gem 'omniauth-bn-office365', '~> 0.1.1'
-
-# BigBlueButton API wrapper.
 gem 'bigbluebutton-api-ruby', git: 'https://github.com/mconf/bigbluebutton-api-ruby.git', branch: 'master'
 gem 'bn-ldap-authentication', '~> 0.1.4'
 gem 'bootsnap', '~> 1.7.2', require: false
