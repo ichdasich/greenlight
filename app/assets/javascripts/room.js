@@ -211,6 +211,7 @@ function showCreateRoom(target) {
   $("#room_all_join_moderator").prop("checked", $("#room_all_join_moderator").data("default"))
   $("#room_recording").prop("checked", $("#room_recording").data("default"))
   $("#room_samlauth").prop("checked", $("#room_samlauth").data("default"))
+  $("#room_streaming").prop("checked", $("#room_streaming").data("default"))
 
   //show all elements & their children with a create-only class
   $(".create-only").each(function() {
@@ -272,6 +273,7 @@ function updateCurrentSettings(settings_path){
     $("#room_all_join_moderator").prop("checked", $("#room_all_join_moderator").data("default") || settings.joinModerator)
     $("#room_recording").prop("checked", $("#room_recording").data("default") || Boolean(settings.recording))
     $("#room_samlauth").prop("checked", $("#room_samlauth").data("default") || Boolean(settings.samlauth))
+    $("#room_streaming").prop("checked", $("#room_streaming").data("default") || Boolean(settings.streaming))
   })
 }
 
