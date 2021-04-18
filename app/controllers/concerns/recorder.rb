@@ -83,7 +83,8 @@ module Recorder
              (!r[:metadata].nil? && ((!r[:metadata][:name].nil? &&
                     r[:metadata][:name].downcase.include?(search)) ||
                   (r[:metadata][:"gl-listed"] == "true" && search == "public") ||
-                  (r[:metadata][:"gl-listed"] == "false" && search == "unlisted"))) ||
+                  (r[:metadata][:"gl-listed"] == "unlisted" && search == "unlisted") ||
+                  (r[:metadata][:"gl-listed"] == "false" && search == "private"))) ||
                ((r[:metadata].nil? || r[:metadata][:name].nil?) &&
                  r[:name].downcase.include?(search)) ||
                r[:participants].include?(search) ||
