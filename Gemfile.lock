@@ -257,6 +257,9 @@ GEM
     omniauth-oauth2 (1.5.0)
       oauth2 (~> 1.1)
       omniauth (~> 1.2)
+    omniauth-saml (1.10.1)
+      omniauth (~> 1.3, >= 1.3.2)
+      ruby-saml (~> 1.7)
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
@@ -376,6 +379,9 @@ GEM
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.4)
     rubyzip (2.3.0)
+    ruby-saml (1.11.0)
+      nokogiri (>= 1.5.10)
+    safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -490,6 +496,7 @@ DEPENDENCIES
   omniauth-bn-launcher (~> 0.1.3)
   omniauth-bn-office365 (~> 0.1.1)
   omniauth-google-oauth2 (~> 0.7.0)
+  omniauth-saml
   omniauth-twitter (~> 1.4.0)
   omniauth_openid_connect (~> 0.3.5)
   pagy (~> 3.11.0)

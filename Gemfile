@@ -7,6 +7,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
+gem 'omniauth-saml'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'aws-sdk-s3', '~> 1.88.1'
 gem 'bcrypt', '~> 3.1.7'

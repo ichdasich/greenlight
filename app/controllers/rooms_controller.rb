@@ -353,6 +353,7 @@ class RoomsController < ApplicationController
       anyoneCanStart: options[:anyone_can_start] == "1",
       joinModerator: options[:all_join_moderator] == "1",
       recording: options[:recording] == "1",
+      samlauth: options[:samlauth] == "1",
     }
 
     room_settings.to_json
@@ -361,7 +362,7 @@ class RoomsController < ApplicationController
   def room_params
     params.require(:room).permit(:name, :auto_join, :mute_on_join, :access_code,
       :require_moderator_approval, :anyone_can_start, :all_join_moderator,
-      :recording, :presentation, :moderator_access_code)
+      :recording, :samlauth, :presentation, :moderator_access_code)
   end
 
   # Find the room from the uid.
@@ -461,6 +462,8 @@ class RoomsController < ApplicationController
       "Room Configuration Allow Any Start"
     when "recording"
       "Room Configuration Recording"
+    when "samlauth"
+      "Room Configuration SAML Auth"
     end
 
     case @settings.get_value(config)
