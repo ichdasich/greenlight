@@ -176,6 +176,8 @@ de_DE:
         info: "Gewährt allen Teilnehmern Moderatorenrechte in BigBlueButton, wenn sie an der Konferenz teilnehmen."
       recordings:
         info: "Ermöglicht Rauminitiatoren die Festlegung, ob sie die Option zum Aufzeichnen eines Raums wünschen oder nicht. Wenn diese Option aktiviert ist, muss der Moderator auch nach Beginn der Konferenz auf den Button \"Aufzeichnen\" klicken."
+      streaming:
+        info: "Ermöglicht Rauminitiatoren Streaming für diesen Raum zu aktivieren."
       moderator_codes:
         info: "Ermöglicht es Rauminitiatoren, optional einen Moderatoren-PIN zu generieren, der es anderen Teilnehmern ermöglicht, direkt als Moderator beizutreten."
         title: Moderatoren-Zugangscode
@@ -454,6 +456,7 @@ de_DE:
       footer_text: Anpassungen des Raums können jederzeit vorgenommen werden.
       recording: Aufnahme des Raumes erlauben
       samlauth: Nur TU Delft Benutzer erlauben
+      streaming: Streaming aktivieren
     rename_room:
       name_placeholder: Neuen Raumnamen eingeben...
     share_access:
@@ -568,6 +571,8 @@ de_DE:
     invitation_description: "Sie wurden zu %{name} über BigBlueButton zur Teilnahme eingeladen. Um beizutreten, klicken Sie auf den obigen Link und geben Sie Ihren Namen ein."
     invited: Sie wurden zur Teilnahme eingeladen
     recording_present: "Ich bestätige, dass diese Sitzung aufgezeichnet wird. Dies kann meine Sprach- und Videoaufnahmen beinhalten, wenn diese geteilt werden."
+    streaming_present: "Ich bestätige, dass diese Sitzung gestreamt wird, und Dritte Inhalte des Raumes sehen, ohne in der Teilnehmendenliste aufgeführt zu werden."
+    streaming_at: "Dieser Raum ist auch als Stream verfügbar: %{href}"
     invite_participants: Teilnehmer einladen
     join: Teilnehmen
     last_session: "Letzte Konferenz am %{session}"

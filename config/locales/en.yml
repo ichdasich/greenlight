@@ -178,6 +178,8 @@ en:
         info: Allows room owners to specify whether they want the option to record a room or not. If enabled, the moderator must still click the "Record" button once the meeting has started.
       samlauth:
         info: Requires users to be authenticated via SAML to join the room.
+      streaming:
+        info: Allows users to automatically stream the room.
       moderator_codes:
         info: Allows room owners to optionally generate a moderator pin which allows other users to join directly as moderators.
         title: Moderator Access Code
@@ -459,6 +461,7 @@ en:
       footer_text: Adjustment to your room can be done at anytime.
       recording: Allow room to be recorded
       samlauth: Only allow TU Delft users
+      streaming: Stream this room
     rename_room:
       name_placeholder: Enter a new room name...
     share_access:
@@ -575,6 +578,8 @@ en:
     invitation_description: You have been invited to join %{name} using BigBlueButton. To join, click the link above and enter your name.
     invited: You have been invited to join
     recording_present: The session you are about to join is going to be recorded. This includes all voice, video, whiteboard, and chat contributions you make during the session. The recording may be made public or shared with third parties after the session. Please indicate whether you consent to this by checking the button to the left. Please refer to our <a href="%{pp_link}"><u>Privacy Policy</u></a> for further information!
+    streaming_present: I understand that this session is being live-streamed and may be viewed by people not included in the room list.
+    streaming_at: "This room is also being streamed to: %{href}"
     invite_participants: Invite Participants
     join: Join
     last_session: Last session on %{session}
