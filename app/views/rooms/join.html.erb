@@ -24,6 +24,8 @@
 <%= render 'rooms/components/room_event', render_recordings: authorized do %>
   <% if room_authentication_required %>
     <h2><%= t("administrator.site_settings.authentication.user-info") %></h2>
+  <% elsif room_authentication_required_saml %>
+    <h2><%= t("administrator.site_settings.authentication.user-info-saml") %></h2>
   <% elsif authorized %>
     <%= form_for room_path(@room), method: :post do |f| %>
       <div class="input-group">

@@ -94,6 +94,13 @@ module Greenlight
     # Determine if GreenLight should enable email verification
     config.enable_email_verification = parse_bool(ENV['ALLOW_MAIL_NOTIFICATIONS'])
 
+    # Determine if GreenLight should deny local logins from a certain mail-domain
+    config.deny_email_domain = if ENV["DENY_MAIL_DOMAIN"].present?
+      ENV["DENY_MAIL_DOMAIN"].split(/[\s,]+/)
+    else
+      []
+    end
+
     # Determine if GreenLight should require a certain mail-domain
     config.require_email_domain = ENV["GREENLIGHT_ACCOUNT_HD"].to_s.split(",")
 
