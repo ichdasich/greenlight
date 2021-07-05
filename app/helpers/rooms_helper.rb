@@ -69,6 +69,20 @@ module RoomsHelper
     end
   end
 
+  def display_streaming_consent
+    # If the require consent setting is checked, then check the room setting, else, set to false
+    # Piggybacking on joiner consent here.
+    if recording_consent_required?
+      room_setting_with_config("streaming")
+    else
+      false
+    end
+  end
+
+  def display_streaming
+    room_setting_with_config("streaming")
+  end
+
   # Array of recording formats not to show for public recordings
   def hidden_format_public
     ENV.fetch("HIDDEN_FORMATS_PUBLIC", "").split(",")

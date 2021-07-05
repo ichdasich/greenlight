@@ -50,8 +50,23 @@
       <% if display_joiner_consent %>
         <label class="custom-control custom-checkbox">
           <input id="joiner-consent" type="checkbox" class="custom-control-input" required>
-          <h4 class="text-left text-danger mt-4 custom-control-label"><%= I18n.t("room.recording_present", pp_link: "/b/terms").html_safe %></h4>
+          <% if display_streaming %>
+            <h4 class="text-left text-danger mt-4 custom-control-label"><%= I18n.t("room.recording_present", pp_link: "/b/terms").html_safe %>
+            </br><%= t("room.streaming_present") %></h4>
+          <% else %>
+            <h4 class="text-left text-danger mt-4 custom-control-label"><%= I18n.t("room.recording_present", pp_link: "/b/terms").html_safe %></h4>
+          <% end %>
         </label>
+      <% else %>
+        <% if display_streaming %>
+          <label class="custom-control custom-checkbox">
+            <input id="joiner-consent" type="checkbox" class="custom-control-input" required>
+            <h4 class="text-left text-danger mt-4 custom-control-label"><%= t("room.streaming_present") %></h4>
+          </label>
+        <% end %>
+      <% end %>
+      <% if display_streaming %>
+        <%= t("room.streaming_at", href: link_to(request.base_url + "/streams" + @room.invite_path[2..-1] + "/", request.base_url + "/streams" + @room.invite_path[2..-1] + "/", target: "_blank", rel: "noopener")).html_safe %>
       <% end %>
     <% end %>
     <% if moderator_access_code_set && !valid_moderator_access_code %>

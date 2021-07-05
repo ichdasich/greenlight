@@ -176,6 +176,8 @@ nl:
         info: Geeft alle gebruikers moderatorrechten in BigBlueButton wanneer ze deelnemen aan de vergadering.
       recordings:
         info: "Hiermee kunnen kamereigenaren aangeven of ze de optie willen om een kamer op te nemen of niet. Indien ingeschakeld, moet de moderator nog steeds op de knop \"Opnemen\" klikken nadat de vergadering is begonnen."
+      streaming:
+        info: Hiermee kunnen gebruikers de kamer automatisch streamen.
       moderator_codes:
         info: Zorgt ervoor dat kamer eigenaars optioneel een moderator pin code kunnen genereren waarmee andere gebruikers direct als moderator kunnen deelnemen.
         title: Moderator Toegangscode
@@ -456,6 +458,7 @@ nl:
       footer_text: Aanpassing aan uw kamer kunnen op elk moment worden gedaan.
       recording: Sta toe dat de ruimte wordt opgenomen
       samlauth: Alleen voor gebruikers met een TU Delft account
+      streaming: Stream deze kamer
     rename_room:
       name_placeholder: Voer een nieuwe kamernaam in...
     share_access:
@@ -571,6 +574,8 @@ nl:
     invitation_description: "Je bent uitgenodigd om deel te nemen aan %{name} via BigBlueButton. Klik op bovenstaande link en voert u uw naam in om te beginnen."
     invited: Je bent uitgenodigd om lid te worden
     recording_present: De sessie waaraan u wilt deelnemen, wordt opgenomen. Dit omvat alle spraak-, video-, whiteboard- en chatbijdragen die u tijdens de sessie levert. De opname kan na de sessie openbaar worden gemaakt of worden gedeeld met derden. Geef aan of u hiermee instemt. Raadpleeg ons <a href="%{pp_link}"> <u> Privacybeleid </u> </a> voor meer informatie!
+    streaming_present: Ik erken dat deze sessie live wordt gestreamd en kan worden bekeken door mensen die niet op de kamerlijst staan.
+    streaming_at: "Bekijk stream: %{href}"
     invite_participants: Deelnemers uitnodigen
     join: Toetreden
     last_session: "Laatste sessie op %{session}"
