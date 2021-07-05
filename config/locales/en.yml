@@ -513,6 +513,7 @@ en:
       inaccessible: Inaccessible
       public: Public
       unlisted: Unlisted
+      private: Private
     format:
       notes: Notes
       podcast: Podcast
