@@ -318,6 +318,7 @@ en:
   info_update_success: Information successfully updated.
   invalid_credentials: 'The email and password you entered did not match our records. Try again or click Forgot Password to reset your password.'
   saml_redirect: "We migrated your account to SURF's single-sign-on system SURFconext. Please use 'Login with SURFconext' for your next login."
+  invalid_credentials_external: "We migrated your account to SURF's single-sign-on system SURFconext. Please use 'Login with SURFconext' for your next login."
   invalid_login_method: Login failed due to account mismatch. You need to log in with omniauth.
   invite_message: "To invite someone to the meeting, send them this link:"
   javascript:
@@ -515,6 +516,7 @@ en:
       visibility: Visibility
       formats: Formats
     visibility:
+      inaccessible: Inaccessible
       public: Public
       unlisted: Unlisted
     format:
@@ -649,6 +651,9 @@ en:
   test_install: >
     This deployment is using a pre-configured testing server, you should replace this with your own.
     For details, see the %{href}.
+  time:
+    formats:
+      default: "%b %d, %Y %-I:%M%P"
   update: Update
   verify:
     accept: Verify

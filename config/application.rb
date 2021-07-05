@@ -101,6 +101,9 @@ module Greenlight
       []
     end
 
+    # Determine if GreenLight should require a certain mail-domain
+    config.require_email_domain = ENV["GREENLIGHT_ACCOUNT_HD"].to_s.split(",")
+
     # Determine if GreenLight should allow non-omniauth signup/login.
     config.allow_user_signup = parse_bool(ENV['ALLOW_GREENLIGHT_ACCOUNTS'])
 
