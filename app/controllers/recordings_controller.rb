@@ -38,11 +38,12 @@ class RecordingsController < ApplicationController
       }
     end
 
-    if params[:state] == "inaccessible"
-      unpublish_recording(params[:record_id])
-    else
-      publish_recording(params[:record_id])
-    end
+    # Disabled due to missing support in scalelite 1.0
+    # if params[:state] == "inaccessible"
+    #   unpublish_recording(params[:record_id])
+    # else
+    #   publish_recording(params[:record_id])
+    # end
 
     res = update_recording(params[:record_id], meta)
 
