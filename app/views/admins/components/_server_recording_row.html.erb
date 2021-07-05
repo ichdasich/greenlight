@@ -61,11 +61,9 @@
     </div>
   </td>
   <td>
-    <% if recording[:metadata][:"gl-listed"] == "true" %>
-      <% sorted_formats = recording[:playbacks].sort_by! { |p| p[:type] } %>
-      <% sorted_formats.each do |p| %>
-        <%= link_to t("recording.format.#{p[:type]}"), p[:url], class: "btn btn-sm btn-primary", target: "_blank" %>
-      <% end %>
+    <% sorted_formats = recording[:playbacks].sort_by! { |p| p[:type] } %>
+    <% sorted_formats.each do |p| %>
+      <%= link_to t("recording.format.#{p[:type]}"), p[:url], class: "btn btn-sm btn-primary", target: "_blank" %>
     <% end %>
   </td>
   <td class="text-center">
